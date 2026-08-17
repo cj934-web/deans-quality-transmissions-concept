@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-17T15:41:23.539Z",
-  "baseUrl": "https://deans-quality-transmissions-concept.pages.dev/",
+  "generatedAt": "2026-08-17T16:24:33.520Z",
+  "baseUrl": "http://127.0.0.1:4173/",
   "routes": [
     "/",
     "/shade"
@@ -460,43 +460,47 @@
         "smallTargets": [],
         "headings": [
           {
-            "text": "Serving Spanish Fork drivers since 1988",
+            "text": "Built to shift.Rebuilt to last.",
             "lines": 4
           },
           {
-            "text": "Transmission diagnosis, repair and rebuilding",
+            "text": "The completedrivetrain.",
+            "lines": 3
+          },
+          {
+            "text": "Diagnose first.Pull last.",
+            "lines": 4
+          },
+          {
+            "text": "Honest work.People remember.",
+            "lines": 3
+          },
+          {
+            "text": "Family run.Craft led.",
+            "lines": 4
+          },
+          {
+            "text": "Good questions.Straight answers.",
+            "lines": 4
+          },
+          {
+            "text": "Pull in.Leave with a plan.",
+            "lines": 4
+          },
+          {
+            "text": "Start witha straight answer.",
             "lines": 2
           },
           {
-            "text": "A major repair should start with a careful diagnosis.",
-            "lines": 3
-          },
-          {
-            "text": "A neighborhood shop with transmission work at its center.",
-            "lines": 3
-          },
-          {
-            "text": "From the daily commute to diesel and performance builds.",
-            "lines": 4
-          },
-          {
-            "text": "The repair people remember is often the one they did not need.",
-            "lines": 6
-          },
-          {
-            "text": "One Spanish Fork location. One direct way to start.",
-            "lines": 3
-          },
-          {
-            "text": "Start with a straight answer.",
-            "lines": 1
+            "text": "Original site pages",
+            "lines": 20
           }
         ]
       },
       "focus": {
         "text": "Skip to content",
-        "top": 14,
-        "bottom": 62,
+        "top": 12,
+        "bottom": 60,
         "outlineWidth": "3px"
       }
     },
@@ -548,43 +552,47 @@
         "smallTargets": [],
         "headings": [
           {
-            "text": "Serving Spanish Fork drivers since 1988",
+            "text": "Built to shift.Rebuilt to last.",
+            "lines": 4
+          },
+          {
+            "text": "The completedrivetrain.",
             "lines": 2
           },
           {
-            "text": "Transmission diagnosis, repair and rebuilding",
-            "lines": 1
-          },
-          {
-            "text": "A major repair should start with a careful diagnosis.",
+            "text": "Diagnose first.Pull last.",
             "lines": 2
           },
           {
-            "text": "A neighborhood shop with transmission work at its center.",
+            "text": "Honest work.People remember.",
             "lines": 2
           },
           {
-            "text": "From the daily commute to diesel and performance builds.",
+            "text": "Family run.Craft led.",
             "lines": 2
           },
           {
-            "text": "The repair people remember is often the one they did not need.",
+            "text": "Good questions.Straight answers.",
             "lines": 2
           },
           {
-            "text": "One Spanish Fork location. One direct way to start.",
+            "text": "Pull in.Leave with a plan.",
             "lines": 2
           },
           {
-            "text": "Start with a straight answer.",
-            "lines": 1
+            "text": "Start witha straight answer.",
+            "lines": 2
+          },
+          {
+            "text": "Original site pages",
+            "lines": 20
           }
         ]
       },
       "focus": {
         "text": "Skip to content",
-        "top": 14,
-        "bottom": 62,
+        "top": 12,
+        "bottom": 60,
         "outlineWidth": "3px"
       }
     },
@@ -636,43 +644,47 @@
         "smallTargets": [],
         "headings": [
           {
-            "text": "Serving Spanish Fork drivers since 1988",
-            "lines": 6
+            "text": "Built to shift.Rebuilt to last.",
+            "lines": 4
           },
           {
-            "text": "Transmission diagnosis, repair and rebuilding",
-            "lines": 2
-          },
-          {
-            "text": "A major repair should start with a careful diagnosis.",
+            "text": "The completedrivetrain.",
             "lines": 3
           },
           {
-            "text": "A neighborhood shop with transmission work at its center.",
-            "lines": 4
-          },
-          {
-            "text": "From the daily commute to diesel and performance builds.",
-            "lines": 4
-          },
-          {
-            "text": "The repair people remember is often the one they did not need.",
-            "lines": 4
-          },
-          {
-            "text": "One Spanish Fork location. One direct way to start.",
+            "text": "Diagnose first.Pull last.",
             "lines": 3
           },
           {
-            "text": "Start with a straight answer.",
+            "text": "Honest work.People remember.",
+            "lines": 4
+          },
+          {
+            "text": "Family run.Craft led.",
             "lines": 2
+          },
+          {
+            "text": "Good questions.Straight answers.",
+            "lines": 4
+          },
+          {
+            "text": "Pull in.Leave with a plan.",
+            "lines": 3
+          },
+          {
+            "text": "Start witha straight answer.",
+            "lines": 3
+          },
+          {
+            "text": "Original site pages",
+            "lines": 1
           }
         ]
       },
       "focus": {
         "text": "Skip to content",
-        "top": 14,
-        "bottom": 62,
+        "top": 12,
+        "bottom": 60,
         "outlineWidth": "3px"
       }
     }

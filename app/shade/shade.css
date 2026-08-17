@@ -35,11 +35,13 @@
 .shade-nav { min-height: 56px; padding: 0 clamp(22px, 7vw, 140px); display: flex; align-items: center; justify-content: center; gap: clamp(24px, 4vw, 64px); position: relative; z-index: 3; background: var(--shade-red); color: white; }
 .shade-nav a { min-height: 44px; display: inline-flex; align-items: center; font-size: 10px; font-weight: 900; letter-spacing: .04em; text-transform: uppercase; }
 
-.shade-hero { min-height: 650px; padding: 84px clamp(24px, 7vw, 130px) 120px; display: grid; place-items: center start; position: relative; isolation: isolate; background: linear-gradient(180deg, rgba(5,11,18,.08) 20%, rgba(5,11,18,.72) 100%), url("/og.png") center 52% / cover no-repeat; color: white; }
-.shade-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(17,79,166,.16), transparent 40%, rgba(217,35,42,.14)); }
-.shade-hero-copy { max-width: 760px; padding: clamp(34px, 4vw, 56px); border-left: 8px solid var(--shade-red); background: linear-gradient(110deg, rgba(9,24,45,.94), rgba(9,24,45,.76)); text-align: left; clip-path: polygon(0 0, 94% 0, 100% 13%, 100% 100%, 0 100%); }
+.shade-hero { min-height: 650px; padding: 84px clamp(24px, 7vw, 130px) 120px; display: grid; place-items: center start; position: relative; isolation: isolate; overflow: hidden; background: radial-gradient(circle at 20% 30%, rgba(25,91,182,.3), transparent 32%), linear-gradient(135deg, #071a31 0%, #061325 58%, #020912 100%); color: white; }
+.shade-hero::before { content: ""; position: absolute; inset: 0 0 0 43%; z-index: -2; background: url("/og.png") 100% 52% / auto 130% no-repeat; clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%); }
+.shade-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #071a31 0%, rgba(7,26,49,.98) 37%, rgba(7,26,49,.54) 62%, rgba(2,9,18,.08) 100%), linear-gradient(180deg, transparent 56%, rgba(2,9,18,.72) 100%); }
+.shade-hero-copy { width: min(760px, 100%); padding: clamp(34px, 4vw, 52px); position: relative; z-index: 1; border-left: 8px solid var(--shade-red); background: #081d36; box-shadow: 0 24px 55px rgba(0,0,0,.28); text-align: left; clip-path: polygon(0 0, 93% 0, 100% 13%, 100% 100%, 0 100%); }
 .shade-hero-copy p { margin: 0 0 14px; color: var(--shade-yellow); font-size: 12px; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
-.shade-hero h1 { margin: 0 0 28px; font-size: clamp(44px, 5vw, 72px); line-height: .96; letter-spacing: -.045em; text-transform: uppercase; }
+.shade-hero h1 { margin: 0 0 28px; font-size: clamp(48px, 4.5vw, 66px); line-height: .96; letter-spacing: -.045em; text-transform: uppercase; }
+.shade-hero h1 span { display: block; color: white; -webkit-text-stroke: 0; }
 .shade-hero-button { min-height: 54px; min-width: 220px; }
 .shade-service-intro { width: min(900px, calc(100% - 40px)); margin: -48px auto 0; padding: 34px clamp(24px, 5vw, 70px); position: relative; z-index: 2; background: var(--shade-blue); color: white; text-align: center; box-shadow: 0 16px 30px rgba(20,35,58,.12); }
 .shade-service-intro p, .shade-kicker { margin: 0 0 12px; color: var(--shade-yellow); font-size: 10px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; }
@@ -190,9 +192,11 @@
   .shade-nav { min-height: 50px; padding: 0 14px; justify-content: space-between; gap: 8px; }
   .shade-nav a { min-height: 44px; font-size: 9px; }
   .shade-nav a:first-child, .shade-nav a:nth-child(4) { display: none; }
-  .shade-hero { min-height: 610px; padding: 64px 18px 102px; background-position: 67% 50%; }
+  .shade-hero { min-height: 610px; padding: 64px 18px 102px; }
+  .shade-hero::before { inset: 0; opacity: .42; background-position: 100% 50%; background-size: auto 108%; clip-path: none; }
+  .shade-hero::after { background: linear-gradient(90deg, rgba(7,26,49,.98), rgba(7,26,49,.78)), linear-gradient(180deg, transparent 45%, rgba(2,9,18,.75)); }
   .shade-hero-copy { width: 100%; padding: 32px 24px; border-left-width: 6px; clip-path: none; }
-  .shade-hero h1 { font-size: clamp(42px, 13vw, 62px); }
+  .shade-hero h1 { font-size: clamp(32px, 8.8vw, 36px); line-height: 1; }
   .shade-service-intro { margin-top: -42px; }
   .shade-services { padding: 70px 18px 84px; }
   .shade-service-grid { grid-template-columns: 1fr; }

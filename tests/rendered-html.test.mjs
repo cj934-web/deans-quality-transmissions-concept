@@ -33,9 +33,10 @@ test("server-renders both completed transmission concepts", async () => {
   assert.equal(shadeResponse.status, 200);
   assert.match(shadeResponse.headers.get("content-type") ?? "", /^text\/html\b/i);
   const shadeHtml = await shadeResponse.text();
+  const shadeText = shadeHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
   assert.match(shadeHtml, /<title>Dean(?:'|&#x27;)s Quality Transmissions \| Shade Tree Direction<\/title>/i);
   assert.match(shadeHtml, /Independent concept direction/i);
-  assert.match(shadeHtml, /Serving Spanish Fork drivers since 1988/i);
+  assert.match(shadeText, /Serving Spanish Fork drivers since 1988/i);
   assert.match(shadeHtml, /Transmission diagnosis, repair and rebuilding/i);
   assert.match(shadeHtml, /No form data is collected here/i);
   assert.match(shadeHtml, /name="robots" content="noindex, nofollow"/i);

@@ -35,6 +35,10 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
 - The first public `/shade` pass exposed static-host RSC prefetch errors from
   internal framework links. The two cross-direction links now use deliberate
   native navigation; the rebuilt static export is console-clean.
+- A user screenshot exposed the original direction's embedded hero typography
+  behind the `/shade` headline. The hero now isolates a clean mechanical crop,
+  uses an opaque service-direction content panel, and keeps the headline to
+  three intentional desktop lines with a compact four-line mobile reflow.
 
 ## Final result
 

@@ -44,7 +44,7 @@ export default function ShadeDirection() {
       <section className="shade-hero" aria-labelledby="shade-title">
         <div className="shade-hero-copy">
           <p>Friendly service · Honest diagnosis · No surprise repair</p>
-          <h1 id="shade-title">Serving Spanish Fork drivers since 1988</h1>
+          <h1 id="shade-title"><span>Serving Spanish</span><span>Fork drivers</span><span>since 1988</span></h1>
           <a className="shade-hero-button" href={`${source}/appointment.aspx`}>Book a diagnosis</a>
         </div>
       </section>
