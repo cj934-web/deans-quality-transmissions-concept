@@ -121,3 +121,5 @@ the deployment and repository.
   gears, optimized locally as a 91 KB WebP.
 - Kept the anniversary number as live HTML text over the image so `38` remains
   exact, crisp, and accessible as `38 years in gear`.
+- Moved the anniversary line beneath the circular gear image on request, keeping
+  the photo itself free of text and the label visible as a centered caption.

@@ -89,12 +89,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-machine" role="img" aria-label="38 years in gear">
-            {/* AI-generated concept photography; this does not depict Dean's actual equipment. */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="hero-machine-image" src="/hero-gears-38.webp" width="960" height="960" alt="" aria-hidden="true" />
-            <div className="machine-core">38</div>
-            <p>years<br />in gear</p>
+          <div className="hero-machine">
+            <div className="hero-machine-art">
+              {/* AI-generated concept photography; this does not depict Dean's actual equipment. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img className="hero-machine-image" src="/hero-gears-38.webp" width="960" height="960" alt="AI-generated close-up of interlocking steel transmission gears" />
+            </div>
+            <p className="hero-machine-caption"><strong>38</strong><span>Years in gear</span></p>
           </div>
 
           <div className="hero-proof" aria-label="Service highlights">
