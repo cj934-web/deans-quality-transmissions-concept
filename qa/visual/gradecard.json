@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T17:18:16.276Z",
+  "generatedAt": "2026-08-17T17:32:03.601Z",
   "baseUrl": "https://deans-quality-transmissions-concept.pages.dev/",
   "routes": [
     "/",
@@ -26,7 +26,7 @@
       "height": 844
     }
   ],
-  "screenshotCount": 55,
+  "screenshotCount": 61,
   "browserLogs": [
     {
       "route": "/",
@@ -100,6 +100,13 @@
       "viewport": "desktop-1440",
       "state": "reviews",
       "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-reviews.png"
+    },
+    {
+      "route": "/",
+      "direction": "machined-night",
+      "viewport": "desktop-1440",
+      "state": "google-reviews",
+      "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-google-reviews.png"
     },
     {
       "route": "/",
@@ -232,6 +239,13 @@
       "route": "/",
       "direction": "machined-night",
       "viewport": "tablet-820",
+      "state": "google-reviews",
+      "screenshot": "qa\\visual\\screenshots\\root-tablet-820-google-reviews.png"
+    },
+    {
+      "route": "/",
+      "direction": "machined-night",
+      "viewport": "tablet-820",
       "state": "team",
       "screenshot": "qa\\visual\\screenshots\\root-tablet-820-team.png"
     },
@@ -354,6 +368,13 @@
       "viewport": "mobile-390",
       "state": "reviews",
       "screenshot": "qa\\visual\\screenshots\\root-mobile-390-reviews.png"
+    },
+    {
+      "route": "/",
+      "direction": "machined-night",
+      "viewport": "mobile-390",
+      "state": "google-reviews",
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-google-reviews.png"
     },
     {
       "route": "/",
@@ -507,6 +528,13 @@
       "route": "/shade",
       "direction": "shade-tree-service",
       "viewport": "desktop-1440",
+      "state": "shade-google-reviews",
+      "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-google-reviews.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "desktop-1440",
       "state": "shade-location",
       "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-location.png"
     },
@@ -620,6 +648,13 @@
       "route": "/shade",
       "direction": "shade-tree-service",
       "viewport": "tablet-820",
+      "state": "shade-google-reviews",
+      "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-google-reviews.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "tablet-820",
       "state": "shade-location",
       "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-location.png"
     },
@@ -728,6 +763,13 @@
       "viewport": "mobile-390",
       "state": "shade-reviews",
       "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-reviews.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "mobile-390",
+      "state": "shade-google-reviews",
+      "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-google-reviews.png"
     },
     {
       "route": "/shade",
