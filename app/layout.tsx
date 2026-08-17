@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: "/og.png",
+        url: "/og.jpg",
         width: 1676,
         height: 943,
         alt: "Dean's Quality Transmissions concept preview",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/og.png"],
+    images: ["/og.jpg"],
   },
 };
 

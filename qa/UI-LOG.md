@@ -47,6 +47,8 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
   optimized locally as WebP, and added in a dedicated educational gallery.
   Each photo has a visible creator/source/license link, and the page explicitly
   says the images do not depict Dean's shop, technicians, or customer work.
+- The large PNG hero/preview asset was re-encoded as a visually equivalent JPEG,
+  reducing it from 1.89 MB to 288 KB without changing its crop or dimensions.
 
 ## Final result
 

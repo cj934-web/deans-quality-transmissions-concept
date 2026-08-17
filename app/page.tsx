@@ -124,9 +124,9 @@ export default function Home() {
 
         <section className="precision" id="standards" aria-labelledby="standards-title">
           <div className="precision-image">
-            {/* The source asset is already compressed and must keep its exact crop. */}
+            {/* The source asset is compressed and must keep its exact crop. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/og.png" width="1676" height="943" alt="An opened automatic transmission assembly on a clean steel workbench" />
+            <img src="/og.jpg" width="1676" height="943" alt="An opened automatic transmission assembly on a clean steel workbench" />
             <p>Inside the work</p>
           </div>
           <div className="precision-copy">

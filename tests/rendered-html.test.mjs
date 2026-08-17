@@ -27,7 +27,7 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(rootHtml, /Independent concept redesign/i);
   assert.match(rootHtml, /Built to shift/i);
   assert.match(rootHtml, /name="robots" content="noindex, nofollow"/i);
-  assert.match(rootHtml, /property="og:image" content="https:\/\/deans-quality-transmissions-concept\.pages\.dev\/og\.png"/i);
+  assert.match(rootHtml, /property="og:image" content="https:\/\/deans-quality-transmissions-concept\.pages\.dev\/og\.jpg"/i);
 
   const shadeResponse = await render(worker, "/shade");
   assert.equal(shadeResponse.status, 200);
