@@ -5,9 +5,9 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
 
 ## Coverage
 
-- One route, one visual direction, and eight in-page states.
+- Two routes, two visual directions, and thirteen in-page states.
 - Desktop 1440×900, tablet 820×900, and mobile 390×844.
-- 25 captured viewport states, including the expanded mobile FAQ.
+- 40 captured viewport states, including the expanded mobile FAQ.
 - Keyboard skip-link visibility and focus treatment checked.
 - Horizontal geometry, heading structure, image loading, and critical 44px tap
   targets checked at every viewport.
@@ -26,6 +26,12 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
   The type scale and mobile composition were repaired and rechecked at 390px.
 - Outlined display text inherited a transparent fill color in one section. Its
   stroke colors are now explicit and visible in all tested viewports.
+- The `/shade` route was absent at baseline. It now provides a distinct
+  service-first direction with its own metadata, disclosure, responsive layout,
+  family-shop proof, and the complete Dean's customer-link matrix.
+- A first-pass focus check sampled the animated root skip link before its
+  transition completed. The gate now waits for the visible focus state and both
+  routes pass at every viewport.
 
 ## Final result
 

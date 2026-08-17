@@ -1,14 +1,15 @@
 # Dean's Quality Transmissions — concept redesign
 
-A clearly labeled, independent one-page redesign concept for Dean's Quality
+A pair of clearly labeled, independent redesign concepts for Dean's Quality
 Transmissions in Spanish Fork, Utah.
 
-[View the Cloudflare Pages demo](https://deans-quality-transmissions-concept.pages.dev/)
+- [View the cinematic direction](https://deans-quality-transmissions-concept.pages.dev/)
+- [View the Shade Tree-inspired direction](https://deans-quality-transmissions-concept.pages.dev/shade)
 
 The page retains the current site's customer-facing paths—appointments, rapid
 quotes, technician questions, specials, warranty information, referrals,
 reviews, staff, affiliations, location, legal pages, and other public links—while
-reframing them in a cinematic, modern automotive presentation.
+reframing them in two distinct, modern automotive presentations.
 
 ## Design brief
 
@@ -23,14 +24,17 @@ reframing them in a cinematic, modern automotive presentation.
   details, named staff, affiliations, and carefully attributed customer
   feedback.
 - **Voice:** direct, calm, mechanically precise, and free of invented claims.
-- **Visual system:** condensed display type, dark machined surfaces, sharp
-  borders, electric blue, service amber, cinematic crops, restrained motion,
-  and square high-contrast controls.
+- **Cinematic visual system (`/`):** condensed display type, dark machined
+  surfaces, electric blue, service amber, and restrained motion.
+- **Service-first visual system (`/shade`):** a white information masthead,
+  red navigation, royal blue service blocks, yellow actions, workshop imagery,
+  and a family-shop trust sequence inspired by the reference site's structure.
 
 ## Boundaries
 
 - This is a design demonstration, not Dean's live website.
 - No Ferrari logos, photographs, vehicle designs, copy, or trade dress are used.
+- No Shade Tree logo, assets, copy, or customer claims are used.
 - Forms are not recreated and no visitor data is collected. Customer actions
   open Dean's current public website.
 - The concept is intentionally **noindex** until an approved production handoff.

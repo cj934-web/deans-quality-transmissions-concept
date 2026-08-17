@@ -1,11 +1,13 @@
 {
-  "generatedAt": "2026-08-17T15:12:11.927Z",
-  "baseUrl": "https://deans-quality-transmissions-concept.pages.dev/",
+  "generatedAt": "2026-08-17T15:36:55.962Z",
+  "baseUrl": "http://127.0.0.1:4173/",
   "routes": [
-    "/"
+    "/",
+    "/shade"
   ],
   "directions": [
-    "machined-night"
+    "machined-night",
+    "shade-tree-service"
   ],
   "viewports": [
     {
@@ -24,7 +26,7 @@
       "height": 844
     }
   ],
-  "screenshotCount": 25,
+  "screenshotCount": 40,
   "browserLogs": [
     {
       "route": "/",
@@ -40,6 +42,21 @@
       "route": "/",
       "viewport": "mobile-390",
       "entries": []
+    },
+    {
+      "route": "/shade",
+      "viewport": "desktop-1440",
+      "entries": []
+    },
+    {
+      "route": "/shade",
+      "viewport": "tablet-820",
+      "entries": []
+    },
+    {
+      "route": "/shade",
+      "viewport": "mobile-390",
+      "entries": []
     }
   ],
   "findings": {
@@ -51,54 +68,63 @@
   "evidence": [
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "desktop-1440",
       "state": "top",
-      "screenshot": "qa\\visual\\screenshots\\desktop-1440-top.png"
+      "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-top.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "desktop-1440",
       "state": "services",
-      "screenshot": "qa\\visual\\screenshots\\desktop-1440-services.png"
+      "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-services.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "desktop-1440",
       "state": "standards",
-      "screenshot": "qa\\visual\\screenshots\\desktop-1440-standards.png"
+      "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-standards.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "desktop-1440",
       "state": "reviews",
-      "screenshot": "qa\\visual\\screenshots\\desktop-1440-reviews.png"
+      "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-reviews.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "desktop-1440",
       "state": "team",
-      "screenshot": "qa\\visual\\screenshots\\desktop-1440-team.png"
+      "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-team.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "desktop-1440",
       "state": "faq",
-      "screenshot": "qa\\visual\\screenshots\\desktop-1440-faq.png"
+      "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-faq.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "desktop-1440",
       "state": "location",
-      "screenshot": "qa\\visual\\screenshots\\desktop-1440-location.png"
+      "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-location.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "desktop-1440",
       "state": "source-pages",
-      "screenshot": "qa\\visual\\screenshots\\desktop-1440-source-pages.png"
+      "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-source-pages.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "desktop-1440",
       "state": "geometry",
       "geometry": {
@@ -145,58 +171,73 @@
             "lines": 20
           }
         ]
+      },
+      "focus": {
+        "text": "Skip to content",
+        "top": 12,
+        "bottom": 60,
+        "outlineWidth": "3px"
       }
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "tablet-820",
       "state": "top",
-      "screenshot": "qa\\visual\\screenshots\\tablet-820-top.png"
+      "screenshot": "qa\\visual\\screenshots\\root-tablet-820-top.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "tablet-820",
       "state": "services",
-      "screenshot": "qa\\visual\\screenshots\\tablet-820-services.png"
+      "screenshot": "qa\\visual\\screenshots\\root-tablet-820-services.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "tablet-820",
       "state": "standards",
-      "screenshot": "qa\\visual\\screenshots\\tablet-820-standards.png"
+      "screenshot": "qa\\visual\\screenshots\\root-tablet-820-standards.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "tablet-820",
       "state": "reviews",
-      "screenshot": "qa\\visual\\screenshots\\tablet-820-reviews.png"
+      "screenshot": "qa\\visual\\screenshots\\root-tablet-820-reviews.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "tablet-820",
       "state": "team",
-      "screenshot": "qa\\visual\\screenshots\\tablet-820-team.png"
+      "screenshot": "qa\\visual\\screenshots\\root-tablet-820-team.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "tablet-820",
       "state": "faq",
-      "screenshot": "qa\\visual\\screenshots\\tablet-820-faq.png"
+      "screenshot": "qa\\visual\\screenshots\\root-tablet-820-faq.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "tablet-820",
       "state": "location",
-      "screenshot": "qa\\visual\\screenshots\\tablet-820-location.png"
+      "screenshot": "qa\\visual\\screenshots\\root-tablet-820-location.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "tablet-820",
       "state": "source-pages",
-      "screenshot": "qa\\visual\\screenshots\\tablet-820-source-pages.png"
+      "screenshot": "qa\\visual\\screenshots\\root-tablet-820-source-pages.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "tablet-820",
       "state": "geometry",
       "geometry": {
@@ -243,64 +284,80 @@
             "lines": 20
           }
         ]
+      },
+      "focus": {
+        "text": "Skip to content",
+        "top": 12,
+        "bottom": 60,
+        "outlineWidth": "3px"
       }
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "mobile-390",
       "state": "top",
-      "screenshot": "qa\\visual\\screenshots\\mobile-390-top.png"
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-top.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "mobile-390",
       "state": "services",
-      "screenshot": "qa\\visual\\screenshots\\mobile-390-services.png"
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-services.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "mobile-390",
       "state": "standards",
-      "screenshot": "qa\\visual\\screenshots\\mobile-390-standards.png"
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-standards.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "mobile-390",
       "state": "reviews",
-      "screenshot": "qa\\visual\\screenshots\\mobile-390-reviews.png"
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-reviews.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "mobile-390",
       "state": "team",
-      "screenshot": "qa\\visual\\screenshots\\mobile-390-team.png"
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-team.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "mobile-390",
       "state": "faq",
-      "screenshot": "qa\\visual\\screenshots\\mobile-390-faq.png"
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-faq.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "mobile-390",
       "state": "location",
-      "screenshot": "qa\\visual\\screenshots\\mobile-390-location.png"
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-location.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "mobile-390",
       "state": "source-pages",
-      "screenshot": "qa\\visual\\screenshots\\mobile-390-source-pages.png"
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-source-pages.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "mobile-390",
       "state": "faq-open",
-      "screenshot": "qa\\visual\\screenshots\\mobile-390-faq-open.png"
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-faq-open.png"
     },
     {
       "route": "/",
+      "direction": "machined-night",
       "viewport": "mobile-390",
       "state": "geometry",
       "geometry": {
@@ -347,6 +404,288 @@
             "lines": 1
           }
         ]
+      },
+      "focus": {
+        "text": "Skip to content",
+        "top": 12,
+        "bottom": 60,
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "desktop-1440",
+      "state": "shade-top",
+      "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-top.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "desktop-1440",
+      "state": "shade-services",
+      "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-services.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "desktop-1440",
+      "state": "shade-standard",
+      "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-standard.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "desktop-1440",
+      "state": "shade-reviews",
+      "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-reviews.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "desktop-1440",
+      "state": "shade-location",
+      "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-location.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "desktop-1440",
+      "state": "geometry",
+      "geometry": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "brokenImages": [],
+        "h1Count": 1,
+        "smallTargets": [],
+        "headings": [
+          {
+            "text": "Built to shift.Rebuilt to last.",
+            "lines": 4
+          },
+          {
+            "text": "The completedrivetrain.",
+            "lines": 3
+          },
+          {
+            "text": "Diagnose first.Pull last.",
+            "lines": 4
+          },
+          {
+            "text": "Honest work.People remember.",
+            "lines": 3
+          },
+          {
+            "text": "Family run.Craft led.",
+            "lines": 4
+          },
+          {
+            "text": "Good questions.Straight answers.",
+            "lines": 4
+          },
+          {
+            "text": "Pull in.Leave with a plan.",
+            "lines": 4
+          },
+          {
+            "text": "Start witha straight answer.",
+            "lines": 2
+          },
+          {
+            "text": "Original site pages",
+            "lines": 20
+          }
+        ]
+      },
+      "focus": {
+        "text": "Skip to content",
+        "top": 12,
+        "bottom": 60,
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "tablet-820",
+      "state": "shade-top",
+      "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-top.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "tablet-820",
+      "state": "shade-services",
+      "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-services.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "tablet-820",
+      "state": "shade-standard",
+      "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-standard.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "tablet-820",
+      "state": "shade-reviews",
+      "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-reviews.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "tablet-820",
+      "state": "shade-location",
+      "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-location.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "tablet-820",
+      "state": "geometry",
+      "geometry": {
+        "clientWidth": 820,
+        "scrollWidth": 820,
+        "brokenImages": [],
+        "h1Count": 1,
+        "smallTargets": [],
+        "headings": [
+          {
+            "text": "Built to shift.Rebuilt to last.",
+            "lines": 4
+          },
+          {
+            "text": "The completedrivetrain.",
+            "lines": 2
+          },
+          {
+            "text": "Diagnose first.Pull last.",
+            "lines": 2
+          },
+          {
+            "text": "Honest work.People remember.",
+            "lines": 2
+          },
+          {
+            "text": "Family run.Craft led.",
+            "lines": 2
+          },
+          {
+            "text": "Good questions.Straight answers.",
+            "lines": 2
+          },
+          {
+            "text": "Pull in.Leave with a plan.",
+            "lines": 2
+          },
+          {
+            "text": "Start witha straight answer.",
+            "lines": 2
+          },
+          {
+            "text": "Original site pages",
+            "lines": 20
+          }
+        ]
+      },
+      "focus": {
+        "text": "Skip to content",
+        "top": 12,
+        "bottom": 60,
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "mobile-390",
+      "state": "shade-top",
+      "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-top.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "mobile-390",
+      "state": "shade-services",
+      "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-services.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "mobile-390",
+      "state": "shade-standard",
+      "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-standard.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "mobile-390",
+      "state": "shade-reviews",
+      "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-reviews.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "mobile-390",
+      "state": "shade-location",
+      "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-location.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "mobile-390",
+      "state": "geometry",
+      "geometry": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "brokenImages": [],
+        "h1Count": 1,
+        "smallTargets": [],
+        "headings": [
+          {
+            "text": "Built to shift.Rebuilt to last.",
+            "lines": 4
+          },
+          {
+            "text": "The completedrivetrain.",
+            "lines": 3
+          },
+          {
+            "text": "Diagnose first.Pull last.",
+            "lines": 3
+          },
+          {
+            "text": "Honest work.People remember.",
+            "lines": 4
+          },
+          {
+            "text": "Family run.Craft led.",
+            "lines": 2
+          },
+          {
+            "text": "Good questions.Straight answers.",
+            "lines": 4
+          },
+          {
+            "text": "Pull in.Leave with a plan.",
+            "lines": 3
+          },
+          {
+            "text": "Start witha straight answer.",
+            "lines": 3
+          },
+          {
+            "text": "Original site pages",
+            "lines": 1
+          }
+        ]
+      },
+      "focus": {
+        "text": "Skip to content",
+        "top": 12,
+        "bottom": 60,
+        "outlineWidth": "3px"
       }
     }
   ]

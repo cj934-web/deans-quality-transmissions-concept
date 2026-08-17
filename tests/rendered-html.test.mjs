@@ -1,46 +1,46 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-async function render() {
+async function getWorker() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-  const { default: worker } = await import(workerUrl.href);
+  return (await import(workerUrl.href)).default;
+}
 
+async function render(worker, pathname) {
   return worker.fetch(
-    new Request("https://deans-concept.example/", {
-      headers: {
-        accept: "text/html",
-        host: "deans-concept.example",
-        "x-forwarded-proto": "https",
-      },
+    new Request(`https://deans-concept.example${pathname}`, {
+      headers: { accept: "text/html", host: "deans-concept.example", "x-forwarded-proto": "https" },
     }),
-    {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
-      },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
+    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
+    { waitUntil() {}, passThroughOnException() {} },
   );
 }
 
-test("server-renders the completed transmission concept", async () => {
-  const response = await render();
-  assert.equal(response.status, 200);
-  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
+test("server-renders both completed transmission concepts", async () => {
+  const worker = await getWorker();
+  const rootResponse = await render(worker, "/");
+  assert.equal(rootResponse.status, 200);
+  assert.match(rootResponse.headers.get("content-type") ?? "", /^text\/html\b/i);
+  const rootHtml = await rootResponse.text();
+  assert.match(rootHtml, /<title>Dean(?:'|&#x27;)s Quality Transmissions \| Concept Redesign<\/title>/i);
+  assert.match(rootHtml, /Independent concept redesign/i);
+  assert.match(rootHtml, /Built to shift/i);
+  assert.match(rootHtml, /name="robots" content="noindex, nofollow"/i);
+  assert.match(rootHtml, /property="og:image" content="https:\/\/deans-quality-transmissions-concept\.pages\.dev\/og\.png"/i);
 
-  const html = await response.text();
-  assert.match(html, /<title>Dean(?:'|&#x27;)s Quality Transmissions \| Concept Redesign<\/title>/i);
-  assert.match(html, /Independent concept redesign/i);
-  assert.match(html, /Built to shift/i);
-  assert.match(html, /The complete/i);
-  assert.match(html, /drivetrain/i);
-  assert.match(html, /No form data is collected here/i);
-  assert.match(html, /name="robots" content="noindex, nofollow"/i);
-  assert.match(html, /property="og:image" content="https:\/\/deans-quality-transmissions-concept\.pages\.dev\/og\.png"/i);
-  assert.match(html, /https:\/\/www\.deans-quality-transmissions\.com\/appointment\.aspx/i);
-  assert.match(html, /https:\/\/www\.deans-quality-transmissions\.com\/rapidquote\.aspx/i);
-  assert.doesNotMatch(html, /codex-preview|SkeletonPreview|react-loading-skeleton/i);
+  const shadeResponse = await render(worker, "/shade");
+  assert.equal(shadeResponse.status, 200);
+  assert.match(shadeResponse.headers.get("content-type") ?? "", /^text\/html\b/i);
+  const shadeHtml = await shadeResponse.text();
+  assert.match(shadeHtml, /<title>Dean(?:'|&#x27;)s Quality Transmissions \| Shade Tree Direction<\/title>/i);
+  assert.match(shadeHtml, /Independent concept direction/i);
+  assert.match(shadeHtml, /Serving Spanish Fork drivers since 1988/i);
+  assert.match(shadeHtml, /Transmission diagnosis, repair and rebuilding/i);
+  assert.match(shadeHtml, /No form data is collected here/i);
+  assert.match(shadeHtml, /name="robots" content="noindex, nofollow"/i);
+  assert.doesNotMatch(shadeHtml, /property="og:image"/i);
+  assert.match(shadeHtml, /https:\/\/www\.deans-quality-transmissions\.com\/appointment\.aspx/i);
+  assert.match(shadeHtml, /https:\/\/www\.deans-quality-transmissions\.com\/rapidquote\.aspx/i);
+  assert.doesNotMatch(shadeHtml, /codex-preview|SkeletonPreview|react-loading-skeleton/i);
 });
