@@ -1,7 +1,7 @@
 # UI and release log
 
-Final material review completed on 2026-08-17 against the static Cloudflare
-artifact at `http://127.0.0.1:4173/`.
+Final material review completed on 2026-08-17 against the deployed Cloudflare
+Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
 
 ## Coverage
 
