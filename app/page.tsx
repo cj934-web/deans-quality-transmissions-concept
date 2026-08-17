@@ -182,7 +182,7 @@ export default function Home() {
             <div className="google-review-summary">
               <p>Google reviews</p>
               <div><strong>{googleReviewSnapshot.rating}</strong><span aria-label={`${googleReviewSnapshot.rating} out of 5 stars`}>★★★★★</span></div>
-              <h3>{googleReviewSnapshot.count} verified customer reviews</h3>
+              <h3>{googleReviewSnapshot.count} Google reviews</h3>
               <small>Rating checked {googleReviewSnapshot.checked}. Google ratings and review counts can change.</small>
               <a className="button button-ghost" href={googleListingUrl}>View all on Google <span aria-hidden="true">↗</span></a>
             </div>

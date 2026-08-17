@@ -196,7 +196,7 @@ export default function ShadeDirection() {
             <div className="shade-google-summary">
               <p>Google reviews · checked {googleReviewSnapshot.checked}</p>
               <div><strong>{googleReviewSnapshot.rating}</strong><span aria-label={`${googleReviewSnapshot.rating} out of 5 stars`}>★★★★★</span></div>
-              <h3>{googleReviewSnapshot.count} customer reviews</h3>
+              <h3>{googleReviewSnapshot.count} Google reviews</h3>
               <small>Google ratings and review counts can change.</small>
               <a className="shade-outline-button shade-outline-light" href={googleListingUrl}>Read all Google reviews <span aria-hidden="true">↗</span></a>
             </div>

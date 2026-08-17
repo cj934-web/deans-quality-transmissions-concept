@@ -31,7 +31,7 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(rootHtml, /ai-rebuild-bench\.webp/i);
   assert.match(rootHtml, /Diagnostic service bay · Not Dean(?:'|&#x27;)s actual shop/i);
   assert.match(rootHtml, /In-house rebuilding · Not Dean(?:'|&#x27;)s actual shop/i);
-  assert.match(rootText, /4\.8.*184 verified customer reviews/i);
+  assert.match(rootText, /4\.8.*184 Google reviews/i);
   assert.match(rootText, /Bowdy N.*Nolan Blackhurst.*Valerie Mills/i);
   assert.match(rootHtml, /google\.com\/maps\/search/i);
   assert.match(rootHtml, /name="robots" content="noindex, nofollow"/i);
@@ -54,7 +54,7 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(shadeHtml, /reference-jatco-e4n71b\.webp/i);
   assert.match(shadeHtml, /ai-underbody-inspection\.webp/i);
   assert.match(shadeText, /Underbody drivetrain inspection · Not Dean(?:'|&#x27;)s actual shop/i);
-  assert.match(shadeText, /4\.8.*184 customer reviews/i);
+  assert.match(shadeText, /4\.8.*184 Google reviews/i);
   assert.match(shadeText, /Bowdy N.*Nolan Blackhurst.*Valerie Mills/i);
   assert.match(shadeText, /not photos of Dean(?:'|&#x27;)s shop, technicians or customer work/i);
   assert.match(shadeHtml, /commons\.wikimedia\.org\/wiki\/File:Hyundai_7_speed_dual_clutch_transmission/i);
