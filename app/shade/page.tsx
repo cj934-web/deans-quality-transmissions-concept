@@ -25,6 +25,8 @@ const referencePhotos = [
     title: "Seven-speed dual clutch",
     detail: "Hyundai cutaway · photographed by Spielvogel",
     license: "CC0 1.0",
+    width: 1400,
+    height: 933,
     source: "https://commons.wikimedia.org/wiki/File:Hyundai_7_speed_dual_clutch_transmission._Spielvogel.jpg",
   },
   {
@@ -33,6 +35,8 @@ const referencePhotos = [
     title: "Heavy-duty automatic",
     detail: "Aisin A440 cutaway · photographed by TTTNIS",
     license: "CC0 1.0",
+    width: 1400,
+    height: 743,
     source: "https://commons.wikimedia.org/wiki/File:Aisin_A440_transmission.jpg",
   },
   {
@@ -41,6 +45,8 @@ const referencePhotos = [
     title: "Four-speed automatic",
     detail: "Jatco E4N71B cutaway · photographed by OSX",
     license: "Public domain",
+    width: 1280,
+    height: 856,
     source: "https://commons.wikimedia.org/wiki/File:4-speed_Jatco_E4N71B_automatic_transmission_(2015-08-29).jpg",
   },
 ];
@@ -102,7 +108,7 @@ export default function ShadeDirection() {
             {referencePhotos.map((photo, index) => (
               <figure className={`shade-reference-photo shade-reference-photo-${index + 1}`} key={photo.title}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={photo.src} alt={photo.alt} width="1600" height={index === 1 ? "850" : index === 2 ? "1070" : "1067"} loading="lazy" />
+                <img src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" />
                 <figcaption>
                   <div><strong>{photo.title}</strong><span>{photo.detail}</span></div>
                   <a href={photo.source}>Source · {photo.license} <span aria-hidden="true">↗</span></a>
