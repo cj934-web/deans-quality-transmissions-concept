@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T17:01:29.173Z",
+  "generatedAt": "2026-08-17T17:18:16.276Z",
   "baseUrl": "https://deans-quality-transmissions-concept.pages.dev/",
   "routes": [
     "/",
@@ -26,7 +26,7 @@
       "height": 844
     }
   ],
-  "screenshotCount": 46,
+  "screenshotCount": 55,
   "browserLogs": [
     {
       "route": "/",
@@ -84,6 +84,13 @@
       "route": "/",
       "direction": "machined-night",
       "viewport": "desktop-1440",
+      "state": "diagnostic-photo",
+      "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-diagnostic-photo.png"
+    },
+    {
+      "route": "/",
+      "direction": "machined-night",
+      "viewport": "desktop-1440",
       "state": "standards",
       "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-standards.png"
     },
@@ -100,6 +107,13 @@
       "viewport": "desktop-1440",
       "state": "team",
       "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-team.png"
+    },
+    {
+      "route": "/",
+      "direction": "machined-night",
+      "viewport": "desktop-1440",
+      "state": "craft-photo",
+      "screenshot": "qa\\visual\\screenshots\\root-desktop-1440-craft-photo.png"
     },
     {
       "route": "/",
@@ -197,6 +211,13 @@
       "route": "/",
       "direction": "machined-night",
       "viewport": "tablet-820",
+      "state": "diagnostic-photo",
+      "screenshot": "qa\\visual\\screenshots\\root-tablet-820-diagnostic-photo.png"
+    },
+    {
+      "route": "/",
+      "direction": "machined-night",
+      "viewport": "tablet-820",
       "state": "standards",
       "screenshot": "qa\\visual\\screenshots\\root-tablet-820-standards.png"
     },
@@ -213,6 +234,13 @@
       "viewport": "tablet-820",
       "state": "team",
       "screenshot": "qa\\visual\\screenshots\\root-tablet-820-team.png"
+    },
+    {
+      "route": "/",
+      "direction": "machined-night",
+      "viewport": "tablet-820",
+      "state": "craft-photo",
+      "screenshot": "qa\\visual\\screenshots\\root-tablet-820-craft-photo.png"
     },
     {
       "route": "/",
@@ -310,6 +338,13 @@
       "route": "/",
       "direction": "machined-night",
       "viewport": "mobile-390",
+      "state": "diagnostic-photo",
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-diagnostic-photo.png"
+    },
+    {
+      "route": "/",
+      "direction": "machined-night",
+      "viewport": "mobile-390",
       "state": "standards",
       "screenshot": "qa\\visual\\screenshots\\root-mobile-390-standards.png"
     },
@@ -326,6 +361,13 @@
       "viewport": "mobile-390",
       "state": "team",
       "screenshot": "qa\\visual\\screenshots\\root-mobile-390-team.png"
+    },
+    {
+      "route": "/",
+      "direction": "machined-night",
+      "viewport": "mobile-390",
+      "state": "craft-photo",
+      "screenshot": "qa\\visual\\screenshots\\root-mobile-390-craft-photo.png"
     },
     {
       "route": "/",
@@ -451,6 +493,13 @@
       "route": "/shade",
       "direction": "shade-tree-service",
       "viewport": "desktop-1440",
+      "state": "shade-capability-photo",
+      "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-capability-photo.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "desktop-1440",
       "state": "shade-reviews",
       "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-reviews.png"
     },
@@ -557,6 +606,13 @@
       "route": "/shade",
       "direction": "shade-tree-service",
       "viewport": "tablet-820",
+      "state": "shade-capability-photo",
+      "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-capability-photo.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "tablet-820",
       "state": "shade-reviews",
       "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-reviews.png"
     },
@@ -658,6 +714,13 @@
       "viewport": "mobile-390",
       "state": "shade-family-title",
       "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-family-title.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "mobile-390",
+      "state": "shade-capability-photo",
+      "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-capability-photo.png"
     },
     {
       "route": "/shade",
