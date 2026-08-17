@@ -1,0 +1,353 @@
+{
+  "generatedAt": "2026-08-17T15:08:09.307Z",
+  "baseUrl": "http://127.0.0.1:4173/",
+  "routes": [
+    "/"
+  ],
+  "directions": [
+    "machined-night"
+  ],
+  "viewports": [
+    {
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "tablet-820",
+      "width": 820,
+      "height": 900
+    },
+    {
+      "name": "mobile-390",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "screenshotCount": 25,
+  "browserLogs": [
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "entries": []
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-820",
+      "entries": []
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "entries": []
+    }
+  ],
+  "findings": {
+    "p1": [],
+    "p2": []
+  },
+  "score": 100,
+  "decision": "pass",
+  "evidence": [
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "top",
+      "screenshot": "qa\\visual\\screenshots\\desktop-1440-top.png"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "services",
+      "screenshot": "qa\\visual\\screenshots\\desktop-1440-services.png"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "standards",
+      "screenshot": "qa\\visual\\screenshots\\desktop-1440-standards.png"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "reviews",
+      "screenshot": "qa\\visual\\screenshots\\desktop-1440-reviews.png"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "team",
+      "screenshot": "qa\\visual\\screenshots\\desktop-1440-team.png"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "faq",
+      "screenshot": "qa\\visual\\screenshots\\desktop-1440-faq.png"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "location",
+      "screenshot": "qa\\visual\\screenshots\\desktop-1440-location.png"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "source-pages",
+      "screenshot": "qa\\visual\\screenshots\\desktop-1440-source-pages.png"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "geometry",
+      "geometry": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "brokenImages": [],
+        "h1Count": 1,
+        "smallTargets": [],
+        "headings": [
+          {
+            "text": "Built to shift.Rebuilt to last.",
+            "lines": 4
+          },
+          {
+            "text": "The completedrivetrain.",
+            "lines": 3
+          },
+          {
+            "text": "Diagnose first.Pull last.",
+            "lines": 4
+          },
+          {
+            "text": "Honest work.People remember.",
+            "lines": 3
+          },
+          {
+            "text": "Family run.Craft led.",
+            "lines": 4
+          },
+          {
+            "text": "Good questions.Straight answers.",
+            "lines": 4
+          },
+          {
+            "text": "Pull in.Leave with a plan.",
+            "lines": 4
+          },
+          {
+            "text": "Start witha straight answer.",
+            "lines": 2
+          },
+          {
+            "text": "Original site pages",
+            "lines": 20
+          }
+        ]
+      }
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-820",
+      "state": "top",
+      "screenshot": "qa\\visual\\screenshots\\tablet-820-top.png"
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-820",
+      "state": "services",
+      "screenshot": "qa\\visual\\screenshots\\tablet-820-services.png"
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-820",
+      "state": "standards",
+      "screenshot": "qa\\visual\\screenshots\\tablet-820-standards.png"
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-820",
+      "state": "reviews",
+      "screenshot": "qa\\visual\\screenshots\\tablet-820-reviews.png"
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-820",
+      "state": "team",
+      "screenshot": "qa\\visual\\screenshots\\tablet-820-team.png"
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-820",
+      "state": "faq",
+      "screenshot": "qa\\visual\\screenshots\\tablet-820-faq.png"
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-820",
+      "state": "location",
+      "screenshot": "qa\\visual\\screenshots\\tablet-820-location.png"
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-820",
+      "state": "source-pages",
+      "screenshot": "qa\\visual\\screenshots\\tablet-820-source-pages.png"
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-820",
+      "state": "geometry",
+      "geometry": {
+        "clientWidth": 820,
+        "scrollWidth": 820,
+        "brokenImages": [],
+        "h1Count": 1,
+        "smallTargets": [],
+        "headings": [
+          {
+            "text": "Built to shift.Rebuilt to last.",
+            "lines": 4
+          },
+          {
+            "text": "The completedrivetrain.",
+            "lines": 2
+          },
+          {
+            "text": "Diagnose first.Pull last.",
+            "lines": 2
+          },
+          {
+            "text": "Honest work.People remember.",
+            "lines": 2
+          },
+          {
+            "text": "Family run.Craft led.",
+            "lines": 2
+          },
+          {
+            "text": "Good questions.Straight answers.",
+            "lines": 2
+          },
+          {
+            "text": "Pull in.Leave with a plan.",
+            "lines": 2
+          },
+          {
+            "text": "Start witha straight answer.",
+            "lines": 2
+          },
+          {
+            "text": "Original site pages",
+            "lines": 20
+          }
+        ]
+      }
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "top",
+      "screenshot": "qa\\visual\\screenshots\\mobile-390-top.png"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "services",
+      "screenshot": "qa\\visual\\screenshots\\mobile-390-services.png"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "standards",
+      "screenshot": "qa\\visual\\screenshots\\mobile-390-standards.png"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "reviews",
+      "screenshot": "qa\\visual\\screenshots\\mobile-390-reviews.png"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "team",
+      "screenshot": "qa\\visual\\screenshots\\mobile-390-team.png"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "faq",
+      "screenshot": "qa\\visual\\screenshots\\mobile-390-faq.png"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "location",
+      "screenshot": "qa\\visual\\screenshots\\mobile-390-location.png"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "source-pages",
+      "screenshot": "qa\\visual\\screenshots\\mobile-390-source-pages.png"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "faq-open",
+      "screenshot": "qa\\visual\\screenshots\\mobile-390-faq-open.png"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "geometry",
+      "geometry": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "brokenImages": [],
+        "h1Count": 1,
+        "smallTargets": [],
+        "headings": [
+          {
+            "text": "Built to shift.Rebuilt to last.",
+            "lines": 4
+          },
+          {
+            "text": "The completedrivetrain.",
+            "lines": 3
+          },
+          {
+            "text": "Diagnose first.Pull last.",
+            "lines": 3
+          },
+          {
+            "text": "Honest work.People remember.",
+            "lines": 4
+          },
+          {
+            "text": "Family run.Craft led.",
+            "lines": 2
+          },
+          {
+            "text": "Good questions.Straight answers.",
+            "lines": 4
+          },
+          {
+            "text": "Pull in.Leave with a plan.",
+            "lines": 3
+          },
+          {
+            "text": "Start witha straight answer.",
+            "lines": 3
+          },
+          {
+            "text": "Original site pages",
+            "lines": 1
+          }
+        ]
+      }
+    }
+  ]
+}
