@@ -113,3 +113,11 @@ the deployment and repository.
   shadows to preserve readability while keeping the photography visible.
 - Each panel retains its service number and includes a compact `AI concept
   image` disclosure; the reused WebP assets add no duplicate image payload.
+
+## Hero gear artwork · 2026-08-17
+
+- Replaced the abstract concentric-ring artwork in the original direction with
+  an original AI-generated close-up of mechanically credible transmission
+  gears, optimized locally as a 91 KB WebP.
+- Kept the anniversary number as live HTML text over the image so `38` remains
+  exact, crisp, and accessible as `38 years in gear`.

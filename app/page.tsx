@@ -89,9 +89,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-machine" aria-hidden="true">
-            <div className="machine-ring ring-one" />
-            <div className="machine-ring ring-two" />
+          <div className="hero-machine" role="img" aria-label="38 years in gear">
+            {/* AI-generated concept photography; this does not depict Dean's actual equipment. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="hero-machine-image" src="/hero-gears-38.webp" width="960" height="960" alt="" aria-hidden="true" />
             <div className="machine-core">38</div>
             <p>years<br />in gear</p>
           </div>

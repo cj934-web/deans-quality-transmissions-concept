@@ -27,6 +27,8 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(rootHtml, /<title>Dean(?:'|&#x27;)s Quality Transmissions \| Concept Redesign<\/title>/i);
   assert.match(rootHtml, /Independent concept redesign/i);
   assert.match(rootHtml, /Built to shift/i);
+  assert.match(rootHtml, /hero-gears-38\.webp/i);
+  assert.match(rootHtml, /aria-label="38 years in gear"/i);
   assert.match(rootHtml, /ai-diagnostic-bay\.webp/i);
   assert.match(rootHtml, /ai-rebuild-bench\.webp/i);
   assert.match(rootHtml, /service-automatic\.webp/i);
