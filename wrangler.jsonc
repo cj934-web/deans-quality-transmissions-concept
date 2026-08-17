@@ -1,0 +1,6 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "deans-quality-transmissions-concept",
+  "compatibility_date": "2026-08-17",
+  "pages_build_output_dir": "./static-dist"
+}
