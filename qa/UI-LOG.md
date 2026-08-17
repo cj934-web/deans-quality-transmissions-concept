@@ -104,3 +104,12 @@ the deployment and repository.
   text, and carries a visible `AI concept image` disclosure.
 - The original category codes remain as compact overlays so the service grid
   keeps its existing scan pattern and visual identity.
+
+## Original-direction service backgrounds · 2026-08-17
+
+- Added the same six service-specific photographs to the original direction's
+  dark capability grid so every service panel now has a relevant image.
+- Applied a restrained dark gradient, stronger lower-card contrast, and text
+  shadows to preserve readability while keeping the photography visible.
+- Each panel retains its service number and includes a compact `AI concept
+  image` disclosure; the reused WebP assets add no duplicate image payload.

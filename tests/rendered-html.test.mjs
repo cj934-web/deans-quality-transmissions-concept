@@ -29,6 +29,13 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(rootHtml, /Built to shift/i);
   assert.match(rootHtml, /ai-diagnostic-bay\.webp/i);
   assert.match(rootHtml, /ai-rebuild-bench\.webp/i);
+  assert.match(rootHtml, /service-automatic\.webp/i);
+  assert.match(rootHtml, /service-diagnostics\.webp/i);
+  assert.match(rootHtml, /service-manual-clutch\.webp/i);
+  assert.match(rootHtml, /service-transfer-case\.webp/i);
+  assert.match(rootHtml, /service-differential\.webp/i);
+  assert.match(rootHtml, /service-heavy-duty\.webp/i);
+  assert.equal((rootText.match(/AI concept image/gi) ?? []).length >= 8, true);
   assert.match(rootHtml, /Diagnostic service bay · Not Dean(?:'|&#x27;)s actual shop/i);
   assert.match(rootHtml, /In-house rebuilding · Not Dean(?:'|&#x27;)s actual shop/i);
   assert.match(rootText, /4\.8.*184 Google reviews/i);

@@ -13,12 +13,12 @@ const localFormPaths: Record<string, string> = {
 };
 
 const services = [
-  ["01", "Automatic transmissions", "Diagnosis, repair, in-house rebuilds, remanufactured units, fluid exchange and band adjustments."],
-  ["02", "Manual & clutch", "Manual transmission repair, clutch service, flywheel work and standard clutch kit replacement."],
-  ["03", "4×4 & transfer cases", "Transfer-case diagnosis, custom 4×4 transmissions and drivetrain problem solving."],
-  ["04", "Heavy duty", "High-performance and diesel builds, billet torque converters, shift kits and transmission coolers."],
-  ["05", "Differentials & axles", "Differential service, driveshaft work and CV axle rebuild or replacement."],
-  ["06", "Computer diagnostics", "Electrical and non-electrical diagnosis for leaks, warning lights, shift issues and driveability."],
+  { number: "01", title: "Automatic transmissions", description: "Diagnosis, repair, in-house rebuilds, remanufactured units, fluid exchange and band adjustments.", image: "/shade/service-automatic.webp" },
+  { number: "02", title: "Manual & clutch", description: "Manual transmission repair, clutch service, flywheel work and standard clutch kit replacement.", image: "/shade/service-manual-clutch.webp" },
+  { number: "03", title: "4×4 & transfer cases", description: "Transfer-case diagnosis, custom 4×4 transmissions and drivetrain problem solving.", image: "/shade/service-transfer-case.webp" },
+  { number: "04", title: "Heavy duty", description: "High-performance and diesel builds, billet torque converters, shift kits and transmission coolers.", image: "/shade/service-heavy-duty.webp" },
+  { number: "05", title: "Differentials & axles", description: "Differential service, driveshaft work and CV axle rebuild or replacement.", image: "/shade/service-differential.webp" },
+  { number: "06", title: "Computer diagnostics", description: "Electrical and non-electrical diagnosis for leaks, warning lights, shift issues and driveability.", image: "/shade/service-diagnostics.webp" },
 ];
 
 const team = [
@@ -129,11 +129,15 @@ export default function Home() {
             <figcaption><strong>AI concept image</strong><span>Diagnostic service bay · Not Dean&apos;s actual shop</span></figcaption>
           </figure>
           <div className="service-grid">
-            {services.map(([number, title, description]) => (
-              <article className="service-card" key={number}>
-                <span>{number}</span>
-                <h3>{title}</h3>
-                <p>{description}</p>
+            {services.map((service) => (
+              <article className="service-card" key={service.number}>
+                {/* Decorative AI concept photography; this does not depict Dean's shop or customer work. */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img className="service-card-image" src={service.image} width="960" height="640" alt="" aria-hidden="true" loading="lazy" />
+                <span className="service-number">{service.number}</span>
+                <span className="service-image-label">AI concept image</span>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
               </article>
             ))}
           </div>
