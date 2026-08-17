@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const source = "https://www.deans-quality-transmissions.com";
 
 const services = [
@@ -38,7 +36,9 @@ export default function ShadeDirection() {
       </header>
 
       <nav className="shade-nav" aria-label="Shade direction navigation">
-        <Link href="/">Original direction</Link><a href="#shade-services">Services</a><a href="#shade-standard">Why Dean&apos;s</a><a href="#shade-reviews">Reviews</a><a href="#shade-location">Directions</a>
+        {/* A native link keeps the independently exported static directions free of RSC prefetch requests. */}
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+        <a href="/">Original direction</a><a href="#shade-services">Services</a><a href="#shade-standard">Why Dean&apos;s</a><a href="#shade-reviews">Reviews</a><a href="#shade-location">Directions</a>
       </nav>
 
       <section className="shade-hero" aria-labelledby="shade-title">
@@ -156,7 +156,10 @@ export default function ShadeDirection() {
       <footer className="shade-footer">
         <div className="shade-footer-top"><a className="shade-mark shade-footer-mark" href="#shade-top"><strong>Dean&apos;s</strong><span>Quality Transmissions</span></a><p>Independent concept direction. Business information and customer actions are sourced from Dean&apos;s current public website. No form data is collected here.</p></div>
         <div className="shade-source-links" aria-label="Original Dean's website pages">{originalPages.map(([label, path]) => <a href={`${source}${path}`} key={label}>{label}<span aria-hidden="true">↗</span></a>)}</div>
-        <div className="shade-footer-bottom"><p>Layout study references Shade Tree Automotive; no Shade Tree assets, logo or copy are used.</p><div><Link href="/">Ferrari direction</Link><a href="https://www.shadetreeautomotive.net/">Shade Tree reference</a><a href={source}>Dean&apos;s current site</a></div></div>
+        <div className="shade-footer-bottom"><p>Layout study references Shade Tree Automotive; no Shade Tree assets, logo or copy are used.</p><div>
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+          <a href="/">Ferrari direction</a><a href="https://www.shadetreeautomotive.net/">Shade Tree reference</a><a href={source}>Dean&apos;s current site</a>
+        </div></div>
       </footer>
     </main>
   );

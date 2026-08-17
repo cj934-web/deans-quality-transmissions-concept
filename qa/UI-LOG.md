@@ -32,6 +32,9 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
 - A first-pass focus check sampled the animated root skip link before its
   transition completed. The gate now waits for the visible focus state and both
   routes pass at every viewport.
+- The first public `/shade` pass exposed static-host RSC prefetch errors from
+  internal framework links. The two cross-direction links now use deliberate
+  native navigation; the rebuilt static export is console-clean.
 
 ## Final result
 
