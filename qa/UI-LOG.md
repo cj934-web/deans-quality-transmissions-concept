@@ -93,3 +93,14 @@ the deployment and repository.
   from framework link components after the form routes were added. The landing
   page calls now use intentional native navigation, matching the static Pages
   export and avoiding RSC prefetch requests; build and route checks were rerun.
+
+## Service-card photography · 2026-08-17
+
+- Replaced all six letter-only service-card panels in the service-first
+  direction with original, person-free AI concept photography for automatic
+  transmission work, diagnostics, manual/clutch service, transfer cases,
+  differentials/axles, and heavy-duty work.
+- Every image is optimized locally as WebP, includes descriptive alternative
+  text, and carries a visible `AI concept image` disclosure.
+- The original category codes remain as compact overlays so the service grid
+  keeps its existing scan pattern and visual identity.

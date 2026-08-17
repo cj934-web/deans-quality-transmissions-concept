@@ -13,12 +13,12 @@ const localFormPaths: Record<string, string> = {
 };
 
 const services = [
-  { code: "A/T", title: "Automatic transmissions", body: "Diagnosis, repair, fluid service, remanufactured units and complete in-house rebuilds.", href: "/services/default.aspx" },
-  { code: "DTC", title: "Computer diagnostics", body: "Electrical and mechanical testing for warning lights, shift concerns, leaks and driveability issues.", href: "/services/default.aspx" },
-  { code: "M/T", title: "Manual & clutch", body: "Manual transmission repair, clutch kits, flywheel work and hydraulic clutch diagnosis.", href: "/services/default.aspx" },
-  { code: "4×4", title: "Transfer cases", body: "Four-wheel-drive diagnostics, transfer-case repair and custom drivetrain problem solving.", href: "/services/default.aspx" },
-  { code: "AXL", title: "Differentials & axles", body: "Differential service, driveshaft work, CV axles and related vibration or noise diagnosis.", href: "/services/default.aspx" },
-  { code: "HD", title: "Heavy duty & performance", body: "Diesel and performance builds, billet torque converters, shift kits and added cooling.", href: "/services/default.aspx" },
+  { code: "A/T", title: "Automatic transmissions", body: "Diagnosis, repair, fluid service, remanufactured units and complete in-house rebuilds.", href: "/services/default.aspx", image: "/shade/service-automatic.webp", alt: "AI-generated automatic transmission components arranged for inspection on a workshop bench" },
+  { code: "DTC", title: "Computer diagnostics", body: "Electrical and mechanical testing for warning lights, shift concerns, leaks and driveability issues.", href: "/services/default.aspx", image: "/shade/service-diagnostics.webp", alt: "AI-generated diagnostic scan tool connected to an unbranded vehicle in a repair bay" },
+  { code: "M/T", title: "Manual & clutch", body: "Manual transmission repair, clutch kits, flywheel work and hydraulic clutch diagnosis.", href: "/services/default.aspx", image: "/shade/service-manual-clutch.webp", alt: "AI-generated manual gearbox, clutch disc, pressure plate and release bearing on a workshop bench" },
+  { code: "4×4", title: "Transfer cases", body: "Four-wheel-drive diagnostics, transfer-case repair and custom drivetrain problem solving.", href: "/services/default.aspx", image: "/shade/service-transfer-case.webp", alt: "AI-generated four-wheel-drive transfer case opened to show its chain and gears" },
+  { code: "AXL", title: "Differentials & axles", body: "Differential service, driveshaft work, CV axles and related vibration or noise diagnosis.", href: "/services/default.aspx", image: "/shade/service-differential.webp", alt: "AI-generated differential and axle assembly opened to show the ring gear and bearings" },
+  { code: "HD", title: "Heavy duty & performance", body: "Diesel and performance builds, billet torque converters, shift kits and added cooling.", href: "/services/default.aspx", image: "/shade/service-heavy-duty.webp", alt: "AI-generated heavy-duty transmission and torque converter prepared for rebuilding" },
 ];
 
 const originalPages = [
@@ -102,7 +102,13 @@ export default function ShadeDirection() {
           <div className="shade-service-grid">
             {services.map((service, index) => (
               <a className={`shade-service-card shade-service-${index + 1}`} href={`${source}${service.href}`} key={service.title}>
-                <div className="shade-service-art" aria-hidden="true"><span>{service.code}</span><i /></div>
+                <div className="shade-service-art">
+                  {/* AI-generated concept photography; this does not depict Dean's shop or customer work. */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={service.image} alt={service.alt} width="960" height="640" loading="lazy" />
+                  <span className="shade-service-code" aria-hidden="true">{service.code}</span>
+                  <span className="shade-service-ai">AI concept image</span>
+                </div>
                 <div className="shade-service-copy"><h3>{service.title}</h3><p>{service.body}</p><b>Learn more <span aria-hidden="true">↗</span></b></div>
               </a>
             ))}

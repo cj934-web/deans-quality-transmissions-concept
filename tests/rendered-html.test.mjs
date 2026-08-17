@@ -51,6 +51,13 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(shadeHtml, /Independent concept direction/i);
   assert.match(shadeText, /Serving Spanish Fork drivers since 1988/i);
   assert.match(shadeHtml, /Transmission diagnosis, repair and rebuilding/i);
+  assert.match(shadeHtml, /service-automatic\.webp/i);
+  assert.match(shadeHtml, /service-diagnostics\.webp/i);
+  assert.match(shadeHtml, /service-manual-clutch\.webp/i);
+  assert.match(shadeHtml, /service-transfer-case\.webp/i);
+  assert.match(shadeHtml, /service-differential\.webp/i);
+  assert.match(shadeHtml, /service-heavy-duty\.webp/i);
+  assert.equal((shadeText.match(/AI concept image/gi) ?? []).length >= 9, true);
   assert.match(shadeHtml, /ai-transmission-placeholder\.jpg/i);
   assert.match(shadeHtml, /ai-diagnostics-placeholder\.jpg/i);
   assert.match(shadeText, /Licensed reference photography/i);
