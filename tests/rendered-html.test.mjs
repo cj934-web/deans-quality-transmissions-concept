@@ -26,6 +26,10 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(rootHtml, /<title>Dean(?:'|&#x27;)s Quality Transmissions \| Concept Redesign<\/title>/i);
   assert.match(rootHtml, /Independent concept redesign/i);
   assert.match(rootHtml, /Built to shift/i);
+  assert.match(rootHtml, /ai-diagnostic-bay\.webp/i);
+  assert.match(rootHtml, /ai-rebuild-bench\.webp/i);
+  assert.match(rootHtml, /Diagnostic service bay · Not Dean(?:'|&#x27;)s actual shop/i);
+  assert.match(rootHtml, /In-house rebuilding · Not Dean(?:'|&#x27;)s actual shop/i);
   assert.match(rootHtml, /name="robots" content="noindex, nofollow"/i);
   assert.match(rootHtml, /property="og:image" content="https:\/\/deans-quality-transmissions-concept\.pages\.dev\/og\.jpg"/i);
 
@@ -44,6 +48,8 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(shadeHtml, /reference-hyundai-dct\.webp/i);
   assert.match(shadeHtml, /reference-aisin-a440\.webp/i);
   assert.match(shadeHtml, /reference-jatco-e4n71b\.webp/i);
+  assert.match(shadeHtml, /ai-underbody-inspection\.webp/i);
+  assert.match(shadeText, /Underbody drivetrain inspection · Not Dean(?:'|&#x27;)s actual shop/i);
   assert.match(shadeText, /not photos of Dean(?:'|&#x27;)s shop, technicians or customer work/i);
   assert.match(shadeHtml, /commons\.wikimedia\.org\/wiki\/File:Hyundai_7_speed_dual_clutch_transmission/i);
   assert.match(shadeHtml, /commons\.wikimedia\.org\/wiki\/File:Aisin_A440_transmission/i);

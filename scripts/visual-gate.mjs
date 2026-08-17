@@ -6,8 +6,8 @@ const baseUrl = process.env.QA_BASE_URL ?? "http://localhost:3000/";
 const outputRoot = path.resolve("qa", "visual");
 const screenshotRoot = path.join(outputRoot, "screenshots");
 const routes = [
-  { path: "/", slug: "root", direction: "machined-night", checkpoints: ["top", "services", "standards", "reviews", "team", "faq", "location", "source-pages"] },
-  { path: "/shade", slug: "shade", direction: "shade-tree-service", checkpoints: ["shade-top", "shade-services", "shade-reference", "shade-standard", "shade-family-title", "shade-reviews", "shade-location"] },
+  { path: "/", slug: "root", direction: "machined-night", checkpoints: ["top", "services", "diagnostic-photo", "standards", "reviews", "team", "craft-photo", "faq", "location", "source-pages"] },
+  { path: "/shade", slug: "shade", direction: "shade-tree-service", checkpoints: ["shade-top", "shade-services", "shade-reference", "shade-standard", "shade-family-title", "shade-capability-photo", "shade-reviews", "shade-location"] },
 ];
 const viewports = [
   { name: "desktop-1440", width: 1440, height: 900 },

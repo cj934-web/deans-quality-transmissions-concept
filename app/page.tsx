@@ -110,6 +110,12 @@ export default function Home() {
               <p>From a warning light to a complete rebuild, Dean&apos;s works across the full drivetrain—then explains which repair actually makes sense.</p>
             </div>
           </header>
+          <figure className="concept-photo concept-photo-diagnostics" id="diagnostic-photo">
+            {/* AI-generated concept photography; this does not depict Dean's shop. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/ai-diagnostic-bay.webp" width="1200" height="800" alt="AI-generated transmission diagnostic service bay with an unbranded vehicle on a lift" loading="lazy" />
+            <figcaption><strong>AI concept image</strong><span>Diagnostic service bay · Not Dean&apos;s actual shop</span></figcaption>
+          </figure>
           <div className="service-grid">
             {services.map(([number, title, description]) => (
               <article className="service-card" key={number}>
@@ -180,6 +186,12 @@ export default function Home() {
               <p>Dean and Deena&apos;s family shop continues with their sons managing day-to-day work, supported by experienced rebuilding, installation and customer-service specialists.</p>
             </div>
           </header>
+          <figure className="concept-photo concept-photo-craft" id="craft-photo">
+            {/* AI-generated concept photography; this does not depict Dean's shop. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/ai-rebuild-bench.webp" width="1200" height="800" alt="AI-generated automatic transmission rebuild components organized on a workshop bench" loading="lazy" />
+            <figcaption><strong>AI concept image</strong><span>In-house rebuilding · Not Dean&apos;s actual shop</span></figcaption>
+          </figure>
           <div className="team-grid">
             {team.map(([initials, name, role], index) => (
               <article className="team-card" key={name}>

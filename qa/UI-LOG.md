@@ -5,10 +5,11 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
 
 ## Coverage
 
-- Two routes, two visual directions, and thirteen in-page states.
+- Two routes, two visual directions, and eighteen in-page states.
 - Desktop 1440×900, tablet 820×900, and mobile 390×844.
-- 46 captured viewport states, including the expanded mobile FAQ, the
-  person-free AI placeholder section, and the licensed transmission gallery.
+- 55 captured viewport states, including the expanded mobile FAQ, the
+  person-free AI placeholder section, the licensed transmission gallery, and
+  all three new AI concept-photo placements.
 - Keyboard skip-link visibility and focus treatment checked.
 - Horizontal geometry, heading structure, image loading, and critical 44px tap
   targets checked at every viewport.
@@ -49,6 +50,11 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
   says the images do not depict Dean's shop, technicians, or customer work.
 - The large PNG hero/preview asset was re-encoded as a visually equivalent JPEG,
   reducing it from 1.89 MB to 288 KB without changing its crop or dimensions.
+- Three original, person-free automotive photographs were generated with the
+  built-in image tool and optimized locally as WebP: a diagnostic service bay,
+  a transmission rebuild bench, and an underbody drivetrain inspection. Each
+  placement carries a visible `AI concept image` label plus a statement that it
+  does not depict Dean's actual shop.
 
 ## Final result
 

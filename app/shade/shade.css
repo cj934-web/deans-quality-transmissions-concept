@@ -118,6 +118,14 @@
 .shade-capabilities h2 { max-width: 780px; }
 .shade-capability-list { display: flex; flex-wrap: wrap; gap: 10px; }
 .shade-capability-list span { min-height: 44px; padding: 0 16px; display: inline-flex; align-items: center; background: var(--shade-paper); border-left: 4px solid var(--shade-red); color: var(--shade-blue); font-size: 10px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.shade-capability-photo { min-height: 470px; margin: 18px 0 0; grid-column: 1 / -1; position: relative; overflow: hidden; background: #17283d; box-shadow: 0 18px 40px rgba(13,30,53,.16); }
+.shade-capability-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(7,21,39,.9) 100%); }
+.shade-capability-photo img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; object-position: 50% 43%; filter: saturate(.84) contrast(1.03); transition: transform .35s ease; }
+.shade-capability-photo:hover img { transform: scale(1.015); }
+.shade-capability-photo figcaption { min-height: 72px; padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; gap: 18px; position: absolute; inset: auto 0 0; z-index: 1; border-top: 4px solid var(--shade-yellow); background: rgba(7,21,39,.84); }
+.shade-capability-photo strong, .shade-capability-photo span { font-size: 9px; line-height: 1.45; letter-spacing: .1em; text-transform: uppercase; }
+.shade-capability-photo strong { color: var(--shade-yellow); }
+.shade-capability-photo span { color: rgba(255,255,255,.7); text-align: right; }
 
 .shade-process { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); background: var(--shade-yellow); }
 .shade-process article { min-height: 220px; padding: clamp(36px, 5vw, 74px); display: grid; grid-template-columns: 40px 1fr; gap: 20px; border-right: 1px solid rgba(32,36,43,.22); }
@@ -233,6 +241,9 @@
   .shade-benefits article, .shade-benefits article:nth-child(2) { border-right: 0; border-bottom: 1px solid #d9dce0; }
   .shade-benefits article:last-child { border-bottom: 0; }
   .shade-standard, .shade-family, .shade-capabilities, .shade-reviews { padding: 82px 20px; }
+  .shade-capability-photo { min-height: 340px; margin-top: 8px; }
+  .shade-capability-photo figcaption { min-height: 106px; align-items: flex-start; flex-direction: column; justify-content: center; gap: 7px; }
+  .shade-capability-photo span { text-align: left; }
   .shade-standard-photo { min-height: 520px; }
   .shade-standard-copy h2, .shade-family h2, .shade-capabilities h2, .shade-review-heading h2, .shade-location h2, .shade-final h2 { font-size: clamp(38px, 11vw, 55px); }
   .shade-founder-grid { grid-template-columns: 1fr 1fr; gap: 12px; }

@@ -169,6 +169,12 @@ export default function ShadeDirection() {
         <section className="shade-capabilities" aria-labelledby="shade-capabilities-title">
           <div><p className="shade-kicker">Drivetrains we understand</p><h2 id="shade-capabilities-title">From the daily commute to diesel and performance builds.</h2></div>
           <div className="shade-capability-list" aria-label="Vehicle and drivetrain specialties"><span>Automatic</span><span>Manual</span><span>Diesel</span><span>4×4</span><span>Performance</span><span>Fleet</span><span>Transfer cases</span><span>Differentials</span></div>
+          <figure className="shade-capability-photo" id="shade-capability-photo">
+            {/* AI-generated concept photography; this does not depict Dean's shop. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/shade/ai-underbody-inspection.webp" width="1200" height="800" alt="AI-generated underbody view of a transmission and four-wheel-drive components during inspection" loading="lazy" />
+            <figcaption><strong>AI concept image</strong><span>Underbody drivetrain inspection · Not Dean&apos;s actual shop</span></figcaption>
+          </figure>
         </section>
 
         <section className="shade-process" aria-label="Service process">

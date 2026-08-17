@@ -80,6 +80,15 @@ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.82); }
 .section-heading > div > p { margin: 0; color: rgba(255,255,255,.62); line-height: 1.7; font-size: 15px; max-width: 440px; }
 .compact-heading > div { grid-template-columns: 1fr; }
 
+.concept-photo { min-height: 460px; margin: 0 0 46px; position: relative; overflow: hidden; border: 1px solid var(--line); background: #111820; }
+.concept-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 52%, rgba(3,5,7,.88) 100%); pointer-events: none; }
+.concept-photo img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; filter: saturate(.8) contrast(1.04); transition: transform .35s ease; }
+.concept-photo:hover img { transform: scale(1.015); }
+.concept-photo figcaption { min-height: 70px; padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; gap: 20px; position: absolute; inset: auto 0 0; z-index: 1; border-top: 1px solid rgba(255,255,255,.2); }
+.concept-photo figcaption strong, .concept-photo figcaption span { font-size: 9px; line-height: 1.45; letter-spacing: .14em; text-transform: uppercase; }
+.concept-photo figcaption strong { color: var(--amber); }
+.concept-photo figcaption span { color: rgba(255,255,255,.64); text-align: right; }
+
 .service-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .service-card { min-height: 330px; padding: 34px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; background: rgba(255,255,255,.015); transition: background .25s ease, transform .25s ease; }
 .service-card:hover { background: rgba(51,168,224,.09); transform: translateY(-4px); }
@@ -123,6 +132,8 @@ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.82); }
 .team { background: var(--paper); color: var(--ink); }
 .team .section-index { color: #167eae; }
 .team .section-heading > div > p { color: rgba(7,9,12,.62); }
+.team .concept-photo { border-color: var(--dark-line); }
+.team .concept-photo::after { background: linear-gradient(180deg, transparent 52%, rgba(3,5,7,.9) 100%); }
 .team-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); border-top: 1px solid var(--dark-line); border-left: 1px solid var(--dark-line); }
 .team-card { padding: 26px; border-right: 1px solid var(--dark-line); border-bottom: 1px solid var(--dark-line); }
 .initials { height: 220px; padding: 22px; background: #d9d8d3; color: rgba(7,9,12,.16); display: flex; align-items: flex-end; justify-content: space-between; font-size: clamp(64px, 8vw, 120px); line-height: .75; font-weight: 900; letter-spacing: -.08em; overflow: hidden; }
@@ -231,6 +242,9 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--amber); outlin
   .section-heading { margin-bottom: 48px; }
   .section-heading, .section-heading > div, .section-heading h2, .section-heading > div > p { width: 100%; max-width: 100%; min-width: 0; }
   .section-heading h2, .precision h2, .location h2, .final-cta h2 { font-size: clamp(42px, 12vw, 60px); }
+  .concept-photo { min-height: 290px; margin-bottom: 32px; }
+  .concept-photo figcaption { min-height: 94px; align-items: flex-start; flex-direction: column; justify-content: center; gap: 7px; }
+  .concept-photo figcaption span { text-align: left; }
   .service-grid, .team-grid { grid-template-columns: 1fr; }
   .service-card { min-height: 270px; padding: 26px; }
   .precision-image { min-height: 480px; }
