@@ -7,7 +7,8 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
 
 - Two routes, two visual directions, and thirteen in-page states.
 - Desktop 1440×900, tablet 820×900, and mobile 390×844.
-- 40 captured viewport states, including the expanded mobile FAQ.
+- 43 captured viewport states, including the expanded mobile FAQ and the
+  person-free AI placeholder section.
 - Keyboard skip-link visibility and focus treatment checked.
 - Horizontal geometry, heading structure, image loading, and critical 44px tap
   targets checked at every viewport.
@@ -39,6 +40,9 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
   behind the `/shade` headline. The hero now isolates a clean mechanical crop,
   uses an opaque service-direction content panel, and keeps the headline to
   three intentional desktop lines with a compact four-line mobile reflow.
+- The named Dean and Deena portrait cards were removed at the user's request.
+  Two person-free, AI-generated mechanical placeholders now appear with
+  explicit AI concept labels and descriptive alternative text.
 
 ## Final result
 

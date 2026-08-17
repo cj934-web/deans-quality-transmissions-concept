@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-17T16:25:46.636Z",
-  "baseUrl": "https://deans-quality-transmissions-concept.pages.dev/",
+  "generatedAt": "2026-08-17T16:33:26.932Z",
+  "baseUrl": "http://localhost:3000/",
   "routes": [
     "/",
     "/shade"
@@ -26,7 +26,7 @@
       "height": 844
     }
   ],
-  "screenshotCount": 40,
+  "screenshotCount": 43,
   "browserLogs": [
     {
       "route": "/",
@@ -437,6 +437,13 @@
       "route": "/shade",
       "direction": "shade-tree-service",
       "viewport": "desktop-1440",
+      "state": "shade-family-title",
+      "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-family-title.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "desktop-1440",
       "state": "shade-reviews",
       "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-reviews.png"
     },
@@ -525,6 +532,13 @@
       "route": "/shade",
       "direction": "shade-tree-service",
       "viewport": "tablet-820",
+      "state": "shade-family-title",
+      "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-family-title.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "tablet-820",
       "state": "shade-reviews",
       "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-reviews.png"
     },
@@ -608,6 +622,13 @@
       "viewport": "mobile-390",
       "state": "shade-standard",
       "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-standard.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "mobile-390",
+      "state": "shade-family-title",
+      "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-family-title.png"
     },
     {
       "route": "/shade",

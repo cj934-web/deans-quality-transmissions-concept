@@ -97,19 +97,19 @@ export default function ShadeDirection() {
           <div className="shade-family-copy">
             <p className="shade-kicker">Built by family · Carried forward by family</p>
             <h2 id="shade-family-title">A neighborhood shop with transmission work at its center.</h2>
-            <p>Dean and Deena opened the shop in 1988. Their sons now manage the day-to-day operation with experienced rebuilding, installation and customer-service specialists.</p>
+            <p>The shop opened in 1988. Today, its day-to-day operation brings together experienced rebuilding, installation and customer-service specialists.</p>
             <a className="shade-yellow-button" href={`${source}/about/default.aspx`}>Read Dean&apos;s story <span aria-hidden="true">↗</span></a>
           </div>
           <div className="shade-founder-grid">
             <figure>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/shade/dean.jpg" alt="Dean Lab, founder of Dean's Quality Transmissions" width="220" height="275" />
-              <figcaption><strong>Dean Lab</strong><span>Founder · Retired, still involved</span></figcaption>
+              <img src="/shade/ai-transmission-placeholder.jpg" alt="AI-generated rebuilt transmission on a workshop bench" width="800" height="1000" />
+              <figcaption><strong>AI concept image</strong><span>Placeholder · Transmission rebuilding</span></figcaption>
             </figure>
             <figure>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/shade/deena.jpg" alt="Deena Lab, co-owner of Dean's Quality Transmissions" width="220" height="275" />
-              <figcaption><strong>Deena Lab</strong><span>Co-owner · Service consultant</span></figcaption>
+              <img src="/shade/ai-diagnostics-placeholder.jpg" alt="AI-generated transmission diagnostic parts and tools" width="800" height="1000" />
+              <figcaption><strong>AI concept image</strong><span>Placeholder · Diagnostics and inspection</span></figcaption>
             </figure>
           </div>
         </section>

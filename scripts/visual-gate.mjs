@@ -7,7 +7,7 @@ const outputRoot = path.resolve("qa", "visual");
 const screenshotRoot = path.join(outputRoot, "screenshots");
 const routes = [
   { path: "/", slug: "root", direction: "machined-night", checkpoints: ["top", "services", "standards", "reviews", "team", "faq", "location", "source-pages"] },
-  { path: "/shade", slug: "shade", direction: "shade-tree-service", checkpoints: ["shade-top", "shade-services", "shade-standard", "shade-reviews", "shade-location"] },
+  { path: "/shade", slug: "shade", direction: "shade-tree-service", checkpoints: ["shade-top", "shade-services", "shade-standard", "shade-family-title", "shade-reviews", "shade-location"] },
 ];
 const viewports = [
   { name: "desktop-1440", width: 1440, height: 900 },
