@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-html-link-for-pages -- native links keep the static Pages export free of RSC prefetch requests */
 import { googleListingUrl, googleReviewExcerpts, googleReviewSnapshot } from "../review-data";
-import Link from "next/link";
 
 const source = "https://www.deans-quality-transmissions.com";
 
@@ -77,12 +77,11 @@ export default function ShadeDirection() {
           <strong>Dean&apos;s</strong><span>Quality Transmissions</span>
         </a>
         <div className="shade-contact"><strong><a href="tel:+18017981664">801-798-1664</a></strong><span>590 N Main · Spanish Fork, UT</span></div>
-        <Link className="shade-appointment" href="/shade/forms/appointment">Book a diagnosis <span aria-hidden="true">→</span></Link>
+        <a className="shade-appointment" href="/shade/forms/appointment">Book a diagnosis <span aria-hidden="true">→</span></a>
       </header>
 
       <nav className="shade-nav" aria-label="Shade direction navigation">
         {/* A native link keeps the independently exported static directions free of RSC prefetch requests. */}
-        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
         <a href="/">Original direction</a><a href="#shade-services">Services</a><a href="#shade-standard">Why Dean&apos;s</a><a href="#shade-reviews">Reviews</a><a href="#shade-location">Directions</a>
       </nav>
 
@@ -90,7 +89,7 @@ export default function ShadeDirection() {
         <div className="shade-hero-copy">
           <p>Friendly service · Honest diagnosis · No surprise repair</p>
           <h1 id="shade-title"><span>Serving Spanish</span><span>Fork drivers</span><span>since 1988</span></h1>
-          <Link className="shade-hero-button" href="/shade/forms/appointment">Book a diagnosis</Link>
+          <a className="shade-hero-button" href="/shade/forms/appointment">Book a diagnosis</a>
         </div>
       </section>
 
@@ -153,7 +152,7 @@ export default function ShadeDirection() {
               <li><span aria-hidden="true">✓</span><strong>Repair what is needed</strong></li><li><span aria-hidden="true">✓</span><strong>Document warranty coverage</strong></li>
               <li><span aria-hidden="true">✓</span><strong>Keep the conversation direct</strong></li>
             </ul>
-            <div className="shade-inline-actions"><Link className="shade-red-button" href="/shade/forms/quote">Request a rapid quote</Link><Link className="shade-text-link" href="/shade/forms/question">Ask a technician <span aria-hidden="true">→</span></Link></div>
+            <div className="shade-inline-actions"><a className="shade-red-button" href="/shade/forms/quote">Request a rapid quote</a><a className="shade-text-link" href="/shade/forms/question">Ask a technician <span aria-hidden="true">→</span></a></div>
           </div>
         </section>
 
@@ -230,22 +229,21 @@ export default function ShadeDirection() {
               <div><span>Hours</span><p>Monday–Friday · 8 AM–5 PM<br />Saturday & Sunday · Closed</p></div>
               <div><span>Contact</span><p><a href="tel:+18017981664">801-798-1664</a><br /><a href="mailto:deansqt@gmail.com">deansqt@gmail.com</a></p></div>
             </div>
-            <div className="shade-inline-actions"><Link className="shade-yellow-button" href="/shade/forms/appointment">Schedule an appointment</Link><a className="shade-text-link shade-text-light" href="https://maps.google.com/?q=590+N+Main+Spanish+Fork+UT+84660">Get directions <span aria-hidden="true">↗</span></a></div>
+            <div className="shade-inline-actions"><a className="shade-yellow-button" href="/shade/forms/appointment">Schedule an appointment</a><a className="shade-text-link shade-text-light" href="https://maps.google.com/?q=590+N+Main+Spanish+Fork+UT+84660">Get directions <span aria-hidden="true">↗</span></a></div>
           </div>
           <div className="shade-map" aria-hidden="true"><div className="shade-map-grid" /><span className="shade-road shade-road-a" /><span className="shade-road shade-road-b" /><div className="shade-map-pin"><b><i>D</i></b><span>590 N Main</span></div></div>
         </section>
 
         <section className="shade-final" aria-labelledby="shade-final-title">
           <p>Warning light? Slip? Leak? Noise?</p><h2 id="shade-final-title">Start with a straight answer.</h2>
-          <div><Link className="shade-yellow-button" href="/shade/forms/quote">Request a rapid quote</Link><a className="shade-outline-button shade-outline-light" href="tel:+18017981664">Call 801-798-1664</a></div>
+          <div><a className="shade-yellow-button" href="/shade/forms/quote">Request a rapid quote</a><a className="shade-outline-button shade-outline-light" href="tel:+18017981664">Call 801-798-1664</a></div>
         </section>
       </div>
 
       <footer className="shade-footer">
         <div className="shade-footer-top"><a className="shade-mark shade-footer-mark" href="#shade-top"><strong>Dean&apos;s</strong><span>Quality Transmissions</span></a><p>Independent concept direction. Business information comes from Dean&apos;s current public website; forms open the visitor&apos;s email app and are not stored here.</p></div>
-        <div className="shade-source-links" aria-label="Dean's information and request pages">{originalPages.map(([label, path]) => <Link href={localFormPaths[path] ?? `${source}${path}`} key={label}>{label}<span aria-hidden="true">{localFormPaths[path] ? "→" : "↗"}</span></Link>)}</div>
+        <div className="shade-source-links" aria-label="Dean's information and request pages">{originalPages.map(([label, path]) => <a href={localFormPaths[path] ?? `${source}${path}`} key={label}>{label}<span aria-hidden="true">{localFormPaths[path] ? "→" : "↗"}</span></a>)}</div>
         <div className="shade-footer-bottom"><p>Layout study references Shade Tree Automotive; no Shade Tree assets, logo or copy are used.</p><div>
-          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
           <a href="/">Ferrari direction</a><a href="https://www.shadetreeautomotive.net/">Shade Tree reference</a><a href={source}>Dean&apos;s current site</a>
         </div></div>
       </footer>

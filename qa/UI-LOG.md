@@ -89,3 +89,7 @@ the deployment and repository.
   checks for the remaining informational links to Dean's current website.
 - No new browser screenshot or visual-review run was requested for this form
   change; the prior 100/100 score applies to the earlier two landing routes.
+- A retained development-server log exposed a duplicate-React hydration error
+  from framework link components after the form routes were added. The landing
+  page calls now use intentional native navigation, matching the static Pages
+  export and avoiding RSC prefetch requests; build and route checks were rerun.

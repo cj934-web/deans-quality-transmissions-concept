@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-html-link-for-pages -- native links keep the static Pages export free of RSC prefetch requests */
 import { googleListingUrl, googleReviewExcerpts, googleReviewSnapshot } from "./review-data";
-import Link from "next/link";
 
 const source = "https://www.deans-quality-transmissions.com";
 
@@ -84,8 +84,8 @@ export default function Home() {
               Straight answers, precise diagnostics, and transmission work handled in-house by specialists who only recommend the repair you need.
             </p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/forms/appointment">Book a diagnosis <span aria-hidden="true">→</span></Link>
-              <Link className="button button-ghost" href="/forms/quote">Get a rapid quote</Link>
+              <a className="button button-primary" href="/forms/appointment">Book a diagnosis <span aria-hidden="true">→</span></a>
+              <a className="button button-ghost" href="/forms/quote">Get a rapid quote</a>
             </div>
           </div>
 
@@ -108,10 +108,10 @@ export default function Home() {
 
       <div id="content">
         <section className="quick-actions" aria-label="Quick actions">
-          <Link href="/forms/question"><span>01</span> Ask a technician <b aria-hidden="true">→</b></Link>
+          <a href="/forms/question"><span>01</span> Ask a technician <b aria-hidden="true">→</b></a>
           <a href={`${source}/services/specials.aspx`}><span>02</span> Current specials <b aria-hidden="true">↗</b></a>
           <a href={`${source}/services/warranties.aspx`}><span>03</span> Warranty details <b aria-hidden="true">↗</b></a>
-          <Link href="/forms/referral"><span>04</span> Refer a friend <b aria-hidden="true">→</b></Link>
+          <a href="/forms/referral"><span>04</span> Refer a friend <b aria-hidden="true">→</b></a>
         </section>
 
         <section className="services section-shell" id="services" aria-labelledby="services-title">
@@ -157,7 +157,7 @@ export default function Home() {
               <li><span>03</span><div><h3>Repair with purpose</h3><p>Fix what is needed, document the coverage and get the vehicle moving again.</p></div></li>
             </ol>
             <div className="inline-actions">
-              <Link className="button button-light" href="/forms/appointment">Schedule service <span aria-hidden="true">→</span></Link>
+              <a className="button button-light" href="/forms/appointment">Schedule service <span aria-hidden="true">→</span></a>
               <a className="text-link dark-link" href={`${source}/services/warranties.aspx`}>Compare warranties</a>
             </div>
           </div>
@@ -261,7 +261,7 @@ export default function Home() {
               <p>The current shop website advertises free local towing. Call first to confirm your vehicle and pickup location qualify.</p>
             </details>
           </div>
-          <Link className="text-link" href="/forms/question">Ask Dean&apos;s technician your question <span aria-hidden="true">→</span></Link>
+          <a className="text-link" href="/forms/question">Ask Dean&apos;s technician your question <span aria-hidden="true">→</span></a>
         </section>
 
         <section className="location" id="location" aria-labelledby="location-title">
@@ -274,7 +274,7 @@ export default function Home() {
               <div><span>Contact</span><p><a href="tel:+18017981664">801 798 1664</a><br /><a href="mailto:deansqt@gmail.com">deansqt@gmail.com</a></p></div>
             </div>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/forms/appointment">Request an appointment <span aria-hidden="true">→</span></Link>
+              <a className="button button-primary" href="/forms/appointment">Request an appointment <span aria-hidden="true">→</span></a>
               <a className="button button-ghost" href="https://maps.google.com/?q=590+N+Main+Spanish+Fork+UT+84660">Driving directions</a>
             </div>
           </div>
@@ -290,7 +290,7 @@ export default function Home() {
           <p>Transmission warning light? Slip? Leak? Noise?</p>
           <h2 id="final-title">Start with<br /><em>a straight answer.</em></h2>
           <div className="hero-actions">
-            <Link className="button button-primary" href="/forms/quote">Request a rapid quote <span aria-hidden="true">→</span></Link>
+            <a className="button button-primary" href="/forms/quote">Request a rapid quote <span aria-hidden="true">→</span></a>
             <a className="button button-ghost" href="tel:+18017981664">Call 801 798 1664</a>
           </div>
         </section>
@@ -304,7 +304,7 @@ export default function Home() {
         <div className="source-links" aria-label="Original Dean's website pages">
           <h2>Original site pages</h2>
           <div>
-            {originalPages.map(([label, path]) => <Link key={label} href={localFormPaths[path] ?? `${source}${path}`}>{label}<span aria-hidden="true">{localFormPaths[path] ? "→" : "↗"}</span></Link>)}
+            {originalPages.map(([label, path]) => <a key={label} href={localFormPaths[path] ?? `${source}${path}`}>{label}<span aria-hidden="true">{localFormPaths[path] ? "→" : "↗"}</span></a>)}
           </div>
         </div>
         <div className="footer-meta">
