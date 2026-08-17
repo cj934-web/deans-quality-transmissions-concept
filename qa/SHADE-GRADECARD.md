@@ -6,7 +6,8 @@ deployments. The existing `/` direction must remain unchanged.
 
 | Route and state | Evidence | Severity | Finding | Why it matters | Fix | Recheck |
 |---|---|---|---|---|---|---|
-| `/shade`, all viewports | Route absent at baseline | P1 | Requested Shade Tree-inspired direction does not exist. | The requested customer experience cannot be reviewed or used. | Added a distinct, labeled `/shade` route with functional Dean's customer paths and route-specific metadata. | Resolved: 40-state automated matrix and manual desktop/mobile review pass |
+| `/shade`, all viewports | Route absent at baseline | P1 | Requested Shade Tree-inspired direction does not exist. | The requested customer experience cannot be reviewed or used. | Added a distinct, labeled `/shade` route with functional Dean's customer paths and route-specific metadata. | Resolved: 46-state automated matrix and manual desktop/mobile review pass |
+| `/shade`, transmission gallery | Generic service art only | P2 | The concept lacked reusable real-world transmission photography. | Technical photography makes the specialist service easier to understand and gives the page more visual credibility. | Added three optimized Commons cutaway photos with visible provenance, reuse terms, and a clear reference-image disclaimer. | Resolved: gallery checked at 1440×900, 820×900, and 390×844 |
 
 ## Scorecard
 
@@ -31,7 +32,7 @@ concept, so its points are retained when the route makes no checkout claims.
   service-first blue/red/yellow direction remain visually and structurally
   independent.
 - Responsive and interaction matrix: pass at 1440×900, 820×900, and 390×844.
-- Screenshots: 40 across both routes; no horizontal overflow, broken images,
+- Screenshots: 46 across both routes; no horizontal overflow, broken images,
   undersized critical targets, console errors, failed requests, or HTTP errors.
 - Customer paths: all 19 unique Dean's links returned successful responses.
 - Metadata: route-specific title and description, no inherited root social

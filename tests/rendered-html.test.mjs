@@ -40,6 +40,15 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(shadeHtml, /Transmission diagnosis, repair and rebuilding/i);
   assert.match(shadeHtml, /ai-transmission-placeholder\.jpg/i);
   assert.match(shadeHtml, /ai-diagnostics-placeholder\.jpg/i);
+  assert.match(shadeText, /Licensed reference photography/i);
+  assert.match(shadeHtml, /reference-hyundai-dct\.webp/i);
+  assert.match(shadeHtml, /reference-aisin-a440\.webp/i);
+  assert.match(shadeHtml, /reference-jatco-e4n71b\.webp/i);
+  assert.match(shadeText, /not photos of Dean(?:'|&#x27;)s shop, technicians or customer work/i);
+  assert.match(shadeHtml, /commons\.wikimedia\.org\/wiki\/File:Hyundai_7_speed_dual_clutch_transmission/i);
+  assert.match(shadeHtml, /commons\.wikimedia\.org\/wiki\/File:Aisin_A440_transmission/i);
+  assert.match(shadeText, /CC0 1\.0/i);
+  assert.match(shadeText, /Public domain/i);
   assert.doesNotMatch(shadeHtml, /Dean Lab|Deena Lab|Dean and Deena/i);
   assert.match(shadeHtml, /No form data is collected here/i);
   assert.match(shadeHtml, /name="robots" content="noindex, nofollow"/i);

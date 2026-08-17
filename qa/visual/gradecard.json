@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-17T16:35:07.037Z",
-  "baseUrl": "https://deans-quality-transmissions-concept.pages.dev/",
+  "generatedAt": "2026-08-17T16:43:00.257Z",
+  "baseUrl": "http://localhost:3000/",
   "routes": [
     "/",
     "/shade"
@@ -26,7 +26,7 @@
       "height": 844
     }
   ],
-  "screenshotCount": 43,
+  "screenshotCount": 46,
   "browserLogs": [
     {
       "route": "/",
@@ -430,6 +430,13 @@
       "route": "/shade",
       "direction": "shade-tree-service",
       "viewport": "desktop-1440",
+      "state": "shade-reference",
+      "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-reference.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "desktop-1440",
       "state": "shade-standard",
       "screenshot": "qa\\visual\\screenshots\\shade-desktop-1440-shade-standard.png"
     },
@@ -472,6 +479,10 @@
           },
           {
             "text": "Transmission diagnosis, repair and rebuilding",
+            "lines": 2
+          },
+          {
+            "text": "Complex systems. Clearer conversations.",
             "lines": 2
           },
           {
@@ -525,6 +536,13 @@
       "route": "/shade",
       "direction": "shade-tree-service",
       "viewport": "tablet-820",
+      "state": "shade-reference",
+      "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-reference.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "tablet-820",
       "state": "shade-standard",
       "screenshot": "qa\\visual\\screenshots\\shade-tablet-820-shade-standard.png"
     },
@@ -567,6 +585,10 @@
           },
           {
             "text": "Transmission diagnosis, repair and rebuilding",
+            "lines": 1
+          },
+          {
+            "text": "Complex systems. Clearer conversations.",
             "lines": 1
           },
           {
@@ -620,6 +642,13 @@
       "route": "/shade",
       "direction": "shade-tree-service",
       "viewport": "mobile-390",
+      "state": "shade-reference",
+      "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-reference.png"
+    },
+    {
+      "route": "/shade",
+      "direction": "shade-tree-service",
+      "viewport": "mobile-390",
       "state": "shade-standard",
       "screenshot": "qa\\visual\\screenshots\\shade-mobile-390-shade-standard.png"
     },
@@ -662,6 +691,10 @@
           },
           {
             "text": "Transmission diagnosis, repair and rebuilding",
+            "lines": 2
+          },
+          {
+            "text": "Complex systems. Clearer conversations.",
             "lines": 2
           },
           {

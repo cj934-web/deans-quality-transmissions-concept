@@ -18,6 +18,33 @@ const originalPages = [
   ["Site map", "/sitemap.aspx"], ["Privacy", "/privacypolicy.aspx"], ["Terms", "/termsofservice.aspx"],
 ];
 
+const referencePhotos = [
+  {
+    src: "/shade/reference-hyundai-dct.webp",
+    alt: "Cutaway display of a Hyundai seven-speed dual-clutch transmission",
+    title: "Seven-speed dual clutch",
+    detail: "Hyundai cutaway · photographed by Spielvogel",
+    license: "CC0 1.0",
+    source: "https://commons.wikimedia.org/wiki/File:Hyundai_7_speed_dual_clutch_transmission._Spielvogel.jpg",
+  },
+  {
+    src: "/shade/reference-aisin-a440.webp",
+    alt: "Cutaway display of an Aisin A440 four-speed automatic transmission",
+    title: "Heavy-duty automatic",
+    detail: "Aisin A440 cutaway · photographed by TTTNIS",
+    license: "CC0 1.0",
+    source: "https://commons.wikimedia.org/wiki/File:Aisin_A440_transmission.jpg",
+  },
+  {
+    src: "/shade/reference-jatco-e4n71b.webp",
+    alt: "Cutaway display of a Jatco E4N71B four-speed automatic transmission",
+    title: "Four-speed automatic",
+    detail: "Jatco E4N71B cutaway · photographed by OSX",
+    license: "Public domain",
+    source: "https://commons.wikimedia.org/wiki/File:4-speed_Jatco_E4N71B_automatic_transmission_(2015-08-29).jpg",
+  },
+];
+
 export default function ShadeDirection() {
   return (
     <main className="shade-concept" id="shade-top">
@@ -64,6 +91,25 @@ export default function ShadeDirection() {
             ))}
           </div>
           <a className="shade-outline-button" href={`${source}/services/default.aspx`}>View every Dean&apos;s service <span aria-hidden="true">↗</span></a>
+        </section>
+
+        <section className="shade-reference" id="shade-reference" aria-labelledby="shade-reference-title">
+          <div className="shade-reference-heading">
+            <div><p className="shade-kicker">Inside the transmission</p><h2 id="shade-reference-title">Complex systems. Clearer conversations.</h2></div>
+            <p>Licensed reference photography shows the kinds of internal systems a transmission specialist works with. These are educational images—not photos of Dean&apos;s shop, technicians or customer work.</p>
+          </div>
+          <div className="shade-reference-grid">
+            {referencePhotos.map((photo, index) => (
+              <figure className={`shade-reference-photo shade-reference-photo-${index + 1}`} key={photo.title}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={photo.src} alt={photo.alt} width="1600" height={index === 1 ? "850" : index === 2 ? "1070" : "1067"} loading="lazy" />
+                <figcaption>
+                  <div><strong>{photo.title}</strong><span>{photo.detail}</span></div>
+                  <a href={photo.source}>Source · {photo.license} <span aria-hidden="true">↗</span></a>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </section>
 
         <section className="shade-benefits" aria-label="Dean's service highlights">
