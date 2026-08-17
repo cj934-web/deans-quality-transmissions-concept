@@ -11,7 +11,7 @@ for (const route of routes) {
   hrefs.push(...[...html.matchAll(/href="([^"]+)"/g)].map((match) => match[1].replaceAll("&amp;", "&")));
 }
 
-const links = [...new Set(hrefs.filter((href) => href.startsWith(deanOrigin)))];
+const links = [...new Set(hrefs.filter((href) => href.startsWith(deanOrigin) || href.startsWith("https://www.google.com/maps/search/")))];
 const results = [];
 for (const url of links) {
   try {

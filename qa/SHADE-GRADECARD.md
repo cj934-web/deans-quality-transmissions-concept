@@ -9,6 +9,7 @@ deployments. The existing `/` direction must remain unchanged.
 | `/shade`, all viewports | Route absent at baseline | P1 | Requested Shade Tree-inspired direction does not exist. | The requested customer experience cannot be reviewed or used. | Added a distinct, labeled `/shade` route with functional Dean's customer paths and route-specific metadata. | Resolved: 55-state automated matrix and manual desktop/mobile review pass |
 | `/shade`, transmission gallery | Generic service art only | P2 | The concept lacked reusable real-world transmission photography. | Technical photography makes the specialist service easier to understand and gives the page more visual credibility. | Added three optimized Commons cutaway photos with visible provenance, reuse terms, and a clear reference-image disclaimer. | Resolved: gallery checked at 1440×900, 820×900, and 390×844 |
 | `/shade`, capabilities | Text and icon treatment only | P2 | The service process needed a stronger visual anchor. | A close underbody view helps visitors connect the written capability list to real drivetrain inspection work. | Added an original, optimized AI underbody inspection image with a visible concept-image disclosure and no-shop-identity disclaimer. | Resolved: placement checked at 1440×900, 820×900, and 390×844 |
+| `/shade`, Google reviews | Existing-site testimonials only | P2 | The trust section did not include the shop's current third-party review proof. | Recent, externally verifiable feedback answers the buyer's trust question before the location and contact section. | Added the observed Google rating/count, three short five-star excerpts, a direct source link, and a freshness disclaimer. | Resolved: source verified and review panel checked at 1440×900, 820×900, and 390×844 |
 
 ## Scorecard
 
@@ -33,9 +34,10 @@ concept, so its points are retained when the route makes no checkout claims.
   service-first blue/red/yellow direction remain visually and structurally
   independent.
 - Responsive and interaction matrix: pass at 1440×900, 820×900, and 390×844.
-- Screenshots: 55 across both routes; no horizontal overflow, broken images,
+- Screenshots: 61 across both routes; no horizontal overflow, broken images,
   undersized critical targets, console errors, failed requests, or HTTP errors.
-- Customer paths: all 19 unique Dean's links returned successful responses.
+- Customer paths: all 19 unique Dean's links and the Google review source link
+  returned successful responses.
 - Metadata: route-specific title and description, no inherited root social
   artwork, and `noindex, nofollow` retained.
 - Decision: ready for the labeled concept deployment with 0 open P1/P2 issues.

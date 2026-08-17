@@ -5,9 +5,9 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
 
 ## Coverage
 
-- Two routes, two visual directions, and eighteen in-page states.
+- Two routes, two visual directions, and twenty in-page states.
 - Desktop 1440×900, tablet 820×900, and mobile 390×844.
-- 55 captured viewport states, including the expanded mobile FAQ, the
+- 61 captured viewport states, including the expanded mobile FAQ, the
   person-free AI placeholder section, the licensed transmission gallery, and
   all three new AI concept-photo placements.
 - Keyboard skip-link visibility and focus treatment checked.
@@ -15,7 +15,8 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
   targets checked at every viewport.
 - Browser console warnings/errors, page exceptions, failed requests, and HTTP
   error responses checked in fresh sessions.
-- All 19 customer-facing links to Dean's current website fetched successfully.
+- All 19 customer-facing links to Dean's current website and the Google review
+  source link fetched successfully.
 
 ## Findings and disposition
 
@@ -55,6 +56,11 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
   a transmission rebuild bench, and an underbody drivetrain inspection. Each
   placement carries a visible `AI concept image` label plus a statement that it
   does not depict Dean's actual shop.
+- Dean's public Google Maps listing was checked on 2026-08-17. Both directions
+  now include a 4.8 / 5 rating snapshot from 184 reviews, three short five-star
+  excerpts, a direct Google source link, and a visible freshness disclaimer.
+  Tablet review cards in the service-first direction were widened after visual
+  inspection to prevent one-word staircase wrapping.
 
 ## Final result
 

@@ -1,3 +1,5 @@
+import { googleListingUrl, googleReviewExcerpts, googleReviewSnapshot } from "./review-data";
+
 const source = "https://www.deans-quality-transmissions.com";
 
 const services = [
@@ -176,6 +178,24 @@ export default function Home() {
             </div>
           </div>
           <a className="text-link" href={`${source}/about/testimonials.aspx`}>Read original customer testimonials <span aria-hidden="true">↗</span></a>
+          <div className="google-reviews" id="google-reviews">
+            <div className="google-review-summary">
+              <p>Google reviews</p>
+              <div><strong>{googleReviewSnapshot.rating}</strong><span aria-label={`${googleReviewSnapshot.rating} out of 5 stars`}>★★★★★</span></div>
+              <h3>{googleReviewSnapshot.count} verified customer reviews</h3>
+              <small>Rating checked {googleReviewSnapshot.checked}. Google ratings and review counts can change.</small>
+              <a className="button button-ghost" href={googleListingUrl}>View all on Google <span aria-hidden="true">↗</span></a>
+            </div>
+            <div className="google-review-grid">
+              {googleReviewExcerpts.map((review) => (
+                <blockquote key={review.name}>
+                  <span className="google-stars" aria-label="5 out of 5 stars">★★★★★</span>
+                  <p>“{review.quote}”</p>
+                  <footer>{review.name}<span>Google review excerpt</span></footer>
+                </blockquote>
+              ))}
+            </div>
+          </div>
         </section>
 
         <section className="team section-shell" id="team" aria-labelledby="team-title">

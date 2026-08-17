@@ -1,3 +1,5 @@
+import { googleListingUrl, googleReviewExcerpts, googleReviewSnapshot } from "../review-data";
+
 const source = "https://www.deans-quality-transmissions.com";
 
 const services = [
@@ -189,6 +191,24 @@ export default function ShadeDirection() {
             <blockquote><p>“He was so honest. We thought the transmission was broken, and he could have easily taken advantage of us.”</p><footer>Reed H. · South Jordan, Utah</footer></blockquote>
             <article><span>01</span><p>A Spanish Fork family recalled a loose shift cable being fixed without charge instead of being sold a major repair.</p></article>
             <article><span>02</span><p>An Orem customer described a smaller electronic repair and a car still working well more than a year later.</p></article>
+          </div>
+          <div className="shade-google-reviews" id="shade-google-reviews">
+            <div className="shade-google-summary">
+              <p>Google reviews · checked {googleReviewSnapshot.checked}</p>
+              <div><strong>{googleReviewSnapshot.rating}</strong><span aria-label={`${googleReviewSnapshot.rating} out of 5 stars`}>★★★★★</span></div>
+              <h3>{googleReviewSnapshot.count} customer reviews</h3>
+              <small>Google ratings and review counts can change.</small>
+              <a className="shade-outline-button shade-outline-light" href={googleListingUrl}>Read all Google reviews <span aria-hidden="true">↗</span></a>
+            </div>
+            <div className="shade-google-review-grid">
+              {googleReviewExcerpts.map((review) => (
+                <blockquote key={review.name}>
+                  <span className="shade-google-stars" aria-label="5 out of 5 stars">★★★★★</span>
+                  <p>“{review.quote}”</p>
+                  <footer>{review.name}<span>Google review excerpt</span></footer>
+                </blockquote>
+              ))}
+            </div>
           </div>
         </section>
 

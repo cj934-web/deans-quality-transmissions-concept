@@ -145,6 +145,20 @@
 .shade-review-cards article { padding: 26px 0; display: grid; grid-template-columns: 38px 1fr; gap: 18px; border-bottom: 1px solid rgba(255,255,255,.35); }
 .shade-review-cards article span { color: var(--shade-yellow); font-size: 10px; }
 .shade-review-cards article p { margin: 0; color: rgba(255,255,255,.78); font-size: 13px; line-height: 1.65; }
+.shade-google-reviews { margin-top: 10px; padding-top: 56px; display: grid; grid-template-columns: minmax(260px, .7fr) minmax(0, 1.3fr); gap: clamp(42px, 7vw, 110px); grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.35); }
+.shade-google-summary > p { margin: 0 0 18px; color: var(--shade-yellow); font-size: 10px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.shade-google-summary > div { display: flex; align-items: baseline; gap: 16px; }
+.shade-google-summary > div strong { font-size: clamp(64px, 7vw, 108px); line-height: .8; letter-spacing: -.08em; }
+.shade-google-summary > div span, .shade-google-stars { color: var(--shade-yellow); letter-spacing: .12em; }
+.shade-google-summary h3 { margin: 25px 0 11px; font-size: 19px; text-transform: uppercase; }
+.shade-google-summary small { display: block; color: rgba(255,255,255,.62); font-size: 10px; line-height: 1.55; }
+.shade-google-summary .shade-outline-button { margin: 27px 0 0; }
+.shade-google-review-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid rgba(255,255,255,.35); border-left: 1px solid rgba(255,255,255,.35); }
+.shade-google-review-grid blockquote { min-width: 0; min-height: 285px; margin: 0; padding: 32px 25px; display: flex; flex-direction: column; border-right: 1px solid rgba(255,255,255,.35); border-bottom: 1px solid rgba(255,255,255,.35); }
+.shade-google-stars { font-size: 11px; }
+.shade-google-review-grid blockquote p { margin: 26px 0 36px; font-size: clamp(19px, 2vw, 28px); line-height: 1.15; letter-spacing: -.025em; }
+.shade-google-review-grid blockquote footer { margin-top: auto; color: white; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+.shade-google-review-grid blockquote footer span { margin-top: 7px; display: block; color: rgba(255,255,255,.55); font-size: 8px; }
 
 .shade-location { min-height: 680px; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(420px, .95fr); background: #19283c; color: white; }
 .shade-location-copy { padding: 100px clamp(28px, 8vw, 150px); }
@@ -200,6 +214,7 @@
   .shade-reference-grid { min-height: 900px; grid-template-columns: 1fr 1fr; grid-template-rows: 1.2fr .8fr; }
   .shade-reference-photo-1 { grid-column: 1 / 3; grid-row: auto; }
   .shade-standard, .shade-family, .shade-capabilities, .shade-reviews { grid-template-columns: 1fr; }
+  .shade-google-reviews { grid-template-columns: 1fr; gap: 44px; }
   .shade-standard-photo { min-height: 620px; }
   .shade-family { gap: 60px; }
   .shade-founder-grid { max-width: 680px; }
@@ -241,6 +256,9 @@
   .shade-benefits article, .shade-benefits article:nth-child(2) { border-right: 0; border-bottom: 1px solid #d9dce0; }
   .shade-benefits article:last-child { border-bottom: 0; }
   .shade-standard, .shade-family, .shade-capabilities, .shade-reviews { padding: 82px 20px; }
+  .shade-google-reviews { padding-top: 44px; grid-template-columns: 1fr; gap: 40px; }
+  .shade-google-review-grid { grid-template-columns: 1fr; }
+  .shade-google-review-grid blockquote { min-height: 230px; }
   .shade-capability-photo { min-height: 340px; margin-top: 8px; }
   .shade-capability-photo figcaption { min-height: 106px; align-items: flex-start; flex-direction: column; justify-content: center; gap: 7px; }
   .shade-capability-photo span { text-align: left; }
