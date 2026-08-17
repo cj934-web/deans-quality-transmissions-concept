@@ -76,3 +76,16 @@ Pages site at `https://deans-quality-transmissions-concept.pages.dev/`.
 Machine-readable evidence is saved in `qa/visual/gradecard.json`. Screenshots
 remain in the local QA artifact directory and are intentionally excluded from
 the deployment and repository.
+
+## Native form update · 2026-08-17
+
+- Replaced links to the old appointment, rapid quote, technician question,
+  contact, referral, and survey pages with concept-native routes.
+- Added all six forms to both directions for 12 request routes total.
+- Verified every request route through production builds and server-rendered
+  HTTP tests, including route-specific fields, noindex metadata, email address,
+  acknowledgment, and the no-storage/no-silent-send message.
+- Expanded the local link checker to cover all 14 public routes while retaining
+  checks for the remaining informational links to Dean's current website.
+- No new browser screenshot or visual-review run was requested for this form
+  change; the prior 100/100 score applies to the earlier two landing routes.

@@ -15,9 +15,12 @@ await cp(path.resolve("app", "icon.svg"), path.join(output, "icon.svg"));
 const workerUrl = new URL("../dist/server/index.js", import.meta.url);
 workerUrl.searchParams.set("static-export", `${process.pid}-${Date.now()}`);
 const { default: worker } = await import(workerUrl.href);
+const formKinds = ["appointment", "quote", "question", "contact", "referral", "feedback"];
 const routes = [
   { route: "/", file: "index.html", marker: "Independent concept redesign" },
   { route: "/shade", file: path.join("shade", "index.html"), marker: "Independent concept direction" },
+  ...formKinds.map((kind) => ({ route: `/forms/${kind}`, file: path.join("forms", kind, "index.html"), marker: "Independent concept form" })),
+  ...formKinds.map((kind) => ({ route: `/shade/forms/${kind}`, file: path.join("shade", "forms", kind, "index.html"), marker: "Independent concept form" })),
 ];
 const exported = [];
 
@@ -47,7 +50,11 @@ for (const route of routes) {
   exported.push({ route: route.route, file: route.file, bytes: Buffer.byteLength(html) });
 }
 
-await writeFile(path.join(output, "_redirects"), "/shade /shade/index.html 200\n/shade/* /shade/index.html 200\n/* /index.html 200\n");
+const formRedirects = [
+  ...formKinds.map((kind) => `/forms/${kind} /forms/${kind}/index.html 200`),
+  ...formKinds.map((kind) => `/shade/forms/${kind} /shade/forms/${kind}/index.html 200`),
+];
+await writeFile(path.join(output, "_redirects"), `${formRedirects.join("\n")}\n/shade /shade/index.html 200\n/shade/* /shade/index.html 200\n/* /index.html 200\n`);
 const headersPath = path.join(output, "_headers");
 const generatedHeaders = await readFile(headersPath, "utf8");
 await writeFile(

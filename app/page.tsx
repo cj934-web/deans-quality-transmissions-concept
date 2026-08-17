@@ -1,6 +1,16 @@
 import { googleListingUrl, googleReviewExcerpts, googleReviewSnapshot } from "./review-data";
+import Link from "next/link";
 
 const source = "https://www.deans-quality-transmissions.com";
+
+const localFormPaths: Record<string, string> = {
+  "/appointment.aspx": "/forms/appointment",
+  "/locations.aspx#contact": "/forms/contact",
+  "/services/ask.aspx": "/forms/question",
+  "/rapidquote.aspx": "/forms/quote",
+  "/referfriend.aspx": "/forms/referral",
+  "/survey.aspx": "/forms/feedback",
+};
 
 const services = [
   ["01", "Automatic transmissions", "Diagnosis, repair, in-house rebuilds, remanufactured units, fluid exchange and band adjustments."],
@@ -47,7 +57,7 @@ export default function Home() {
       <a className="skip-link" href="#content">Skip to content</a>
 
       <div className="concept-bar">
-        <p><strong>Independent concept redesign</strong><span> · </span>Customer actions open Dean&apos;s current website.</p>
+        <p><strong>Independent concept redesign</strong><span> · </span>Request forms stay in this concept; service details open Dean&apos;s current website.</p>
         <a href={source}>View current site <span aria-hidden="true">↗</span></a>
       </div>
 
@@ -74,8 +84,8 @@ export default function Home() {
               Straight answers, precise diagnostics, and transmission work handled in-house by specialists who only recommend the repair you need.
             </p>
             <div className="hero-actions">
-              <a className="button button-primary" href={`${source}/appointment.aspx`}>Book a diagnosis <span aria-hidden="true">↗</span></a>
-              <a className="button button-ghost" href={`${source}/rapidquote.aspx`}>Get a rapid quote</a>
+              <Link className="button button-primary" href="/forms/appointment">Book a diagnosis <span aria-hidden="true">→</span></Link>
+              <Link className="button button-ghost" href="/forms/quote">Get a rapid quote</Link>
             </div>
           </div>
 
@@ -98,10 +108,10 @@ export default function Home() {
 
       <div id="content">
         <section className="quick-actions" aria-label="Quick actions">
-          <a href={`${source}/services/ask.aspx`}><span>01</span> Ask a technician <b aria-hidden="true">↗</b></a>
+          <Link href="/forms/question"><span>01</span> Ask a technician <b aria-hidden="true">→</b></Link>
           <a href={`${source}/services/specials.aspx`}><span>02</span> Current specials <b aria-hidden="true">↗</b></a>
           <a href={`${source}/services/warranties.aspx`}><span>03</span> Warranty details <b aria-hidden="true">↗</b></a>
-          <a href={`${source}/referfriend.aspx`}><span>04</span> Refer a friend <b aria-hidden="true">↗</b></a>
+          <Link href="/forms/referral"><span>04</span> Refer a friend <b aria-hidden="true">→</b></Link>
         </section>
 
         <section className="services section-shell" id="services" aria-labelledby="services-title">
@@ -147,7 +157,7 @@ export default function Home() {
               <li><span>03</span><div><h3>Repair with purpose</h3><p>Fix what is needed, document the coverage and get the vehicle moving again.</p></div></li>
             </ol>
             <div className="inline-actions">
-              <a className="button button-light" href={`${source}/appointment.aspx`}>Schedule service <span aria-hidden="true">↗</span></a>
+              <Link className="button button-light" href="/forms/appointment">Schedule service <span aria-hidden="true">→</span></Link>
               <a className="text-link dark-link" href={`${source}/services/warranties.aspx`}>Compare warranties</a>
             </div>
           </div>
@@ -251,7 +261,7 @@ export default function Home() {
               <p>The current shop website advertises free local towing. Call first to confirm your vehicle and pickup location qualify.</p>
             </details>
           </div>
-          <a className="text-link" href={`${source}/services/ask.aspx`}>Ask Dean&apos;s technician your question <span aria-hidden="true">↗</span></a>
+          <Link className="text-link" href="/forms/question">Ask Dean&apos;s technician your question <span aria-hidden="true">→</span></Link>
         </section>
 
         <section className="location" id="location" aria-labelledby="location-title">
@@ -264,7 +274,7 @@ export default function Home() {
               <div><span>Contact</span><p><a href="tel:+18017981664">801 798 1664</a><br /><a href="mailto:deansqt@gmail.com">deansqt@gmail.com</a></p></div>
             </div>
             <div className="hero-actions">
-              <a className="button button-primary" href={`${source}/appointment.aspx`}>Request an appointment <span aria-hidden="true">↗</span></a>
+              <Link className="button button-primary" href="/forms/appointment">Request an appointment <span aria-hidden="true">→</span></Link>
               <a className="button button-ghost" href="https://maps.google.com/?q=590+N+Main+Spanish+Fork+UT+84660">Driving directions</a>
             </div>
           </div>
@@ -280,7 +290,7 @@ export default function Home() {
           <p>Transmission warning light? Slip? Leak? Noise?</p>
           <h2 id="final-title">Start with<br /><em>a straight answer.</em></h2>
           <div className="hero-actions">
-            <a className="button button-primary" href={`${source}/rapidquote.aspx`}>Request a rapid quote <span aria-hidden="true">↗</span></a>
+            <Link className="button button-primary" href="/forms/quote">Request a rapid quote <span aria-hidden="true">→</span></Link>
             <a className="button button-ghost" href="tel:+18017981664">Call 801 798 1664</a>
           </div>
         </section>
@@ -289,16 +299,16 @@ export default function Home() {
       <footer className="site-footer" id="source-pages">
         <div className="footer-brand">
           <a className="wordmark" href="#top"><span className="wordmark-deans">DEAN&apos;S</span><span>Quality Transmissions</span></a>
-          <p>Independent redesign concept. Business information and customer action links are sourced from Dean&apos;s current public website.</p>
+          <p>Independent redesign concept. Business information is sourced from Dean&apos;s current public website; concept forms prepare an email to the shop.</p>
         </div>
         <div className="source-links" aria-label="Original Dean's website pages">
           <h2>Original site pages</h2>
           <div>
-            {originalPages.map(([label, path]) => <a key={label} href={`${source}${path}`}>{label}<span aria-hidden="true">↗</span></a>)}
+            {originalPages.map(([label, path]) => <Link key={label} href={localFormPaths[path] ?? `${source}${path}`}>{label}<span aria-hidden="true">{localFormPaths[path] ? "→" : "↗"}</span></Link>)}
           </div>
         </div>
         <div className="footer-meta">
-          <p>Concept built for demonstration · No form data is collected here.</p>
+          <p>Concept built for demonstration · Forms open the visitor&apos;s email app; this site does not store submissions.</p>
           <div>
             <a href="https://www.atra.com/">ATRA</a>
             <a href="https://members.atra.com/?page=ATRA_ByLaws">Code of ethics</a>

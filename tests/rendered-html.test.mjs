@@ -36,6 +36,11 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(rootHtml, /google\.com\/maps\/search/i);
   assert.match(rootHtml, /name="robots" content="noindex, nofollow"/i);
   assert.match(rootHtml, /property="og:image" content="https:\/\/deans-quality-transmissions-concept\.pages\.dev\/og\.jpg"/i);
+  assert.match(rootHtml, /href="\/forms\/appointment"/i);
+  assert.match(rootHtml, /href="\/forms\/quote"/i);
+  assert.match(rootHtml, /href="\/forms\/question"/i);
+  assert.match(rootHtml, /href="\/forms\/referral"/i);
+  assert.doesNotMatch(rootHtml, /deans-quality-transmissions\.com\/(?:appointment\.aspx|rapidquote\.aspx|services\/ask\.aspx|referfriend\.aspx|survey\.aspx)/i);
 
   const shadeResponse = await render(worker, "/shade");
   assert.equal(shadeResponse.status, 200);
@@ -62,10 +67,48 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(shadeText, /CC0 1\.0/i);
   assert.match(shadeText, /Public domain/i);
   assert.doesNotMatch(shadeHtml, /Dean Lab|Deena Lab|Dean and Deena/i);
-  assert.match(shadeHtml, /No form data is collected here/i);
+  assert.match(shadeHtml, /forms open the visitor(?:'|&#x27;)s email app and are not stored here/i);
   assert.match(shadeHtml, /name="robots" content="noindex, nofollow"/i);
   assert.doesNotMatch(shadeHtml, /property="og:image"/i);
-  assert.match(shadeHtml, /https:\/\/www\.deans-quality-transmissions\.com\/appointment\.aspx/i);
-  assert.match(shadeHtml, /https:\/\/www\.deans-quality-transmissions\.com\/rapidquote\.aspx/i);
+  assert.match(shadeHtml, /href="\/shade\/forms\/appointment"/i);
+  assert.match(shadeHtml, /href="\/shade\/forms\/quote"/i);
+  assert.match(shadeHtml, /href="\/shade\/forms\/question"/i);
+  assert.match(shadeHtml, /href="\/shade\/forms\/referral"/i);
+  assert.doesNotMatch(shadeHtml, /deans-quality-transmissions\.com\/(?:appointment\.aspx|rapidquote\.aspx|services\/ask\.aspx|referfriend\.aspx|survey\.aspx)/i);
   assert.doesNotMatch(shadeHtml, /codex-preview|SkeletonPreview|react-loading-skeleton/i);
+});
+
+test("server-renders every native form in both concept directions", async () => {
+  const worker = await getWorker();
+  const cases = [
+    ["appointment", "Request an appointment", "What changed?"],
+    ["quote", "Request a rapid quote", "Concern and quote request"],
+    ["question", "Ask a technician", "Your question"],
+    ["contact", "Contact the shop", "Preferred reply"],
+    ["referral", "Refer a friend", "Friend’s name"],
+    ["feedback", "Share customer feedback", "Overall experience"],
+  ];
+
+  for (const theme of ["dark", "shade"]) {
+    for (const [kind, heading, fieldLabel] of cases) {
+      const prefix = theme === "shade" ? "/shade/forms" : "/forms";
+      const response = await render(worker, `${prefix}/${kind}`);
+      assert.equal(response.status, 200, `${prefix}/${kind} should render`);
+      assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
+      const html = await response.text();
+      const text = html.replace(/<[^>]+>/g, " ").replace(/&(?:#x27|apos);/g, "'").replace(/\s+/g, " ");
+
+      assert.match(html, new RegExp(`data-form-theme="${theme}"`, "i"));
+      assert.match(text, new RegExp(heading.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
+      assert.match(text, new RegExp(fieldLabel.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
+      assert.match(html, /id="request-form"/i);
+      assert.match(html, /Email handoff/i);
+      assert.match(text, /does not store or silently send form data/i);
+      assert.match(html, /deansqt@gmail\.com/i);
+      assert.match(text, /does not reserve an appointment or confirm service until Dean's replies/i);
+      assert.match(html, /<input(?=[^>]*type="checkbox")(?=[^>]*name="emailHandoffAcknowledged")(?=[^>]*required)[^>]*>/i);
+      assert.match(html, /name="robots" content="noindex, nofollow"/i);
+      assert.doesNotMatch(html, /property="og:image"/i);
+    }
+  }
 });

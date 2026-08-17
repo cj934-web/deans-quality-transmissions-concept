@@ -1,6 +1,12 @@
 const baseUrl = process.env.QA_BASE_URL ?? "http://localhost:3000/";
 const deanOrigin = "https://www.deans-quality-transmissions.com";
-const routes = ["/", "/shade"];
+const formKinds = ["appointment", "quote", "question", "contact", "referral", "feedback"];
+const routes = [
+  "/",
+  "/shade",
+  ...formKinds.map((kind) => `/forms/${kind}`),
+  ...formKinds.map((kind) => `/shade/forms/${kind}`),
+];
 const hrefs = [];
 
 for (const route of routes) {
