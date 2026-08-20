@@ -4,7 +4,7 @@ A pair of clearly labeled, independent redesign concepts for Dean's Quality
 Transmissions in Spanish Fork, Utah.
 
 - [View the cinematic direction](https://deans-quality-transmissions-concept.pages.dev/)
-- [View the Shade Tree-inspired direction](https://deans-quality-transmissions-concept.pages.dev/shade)
+- [View the service-focused direction](https://deans-quality-transmissions-concept.pages.dev/shade)
 
 The page retains the current site's customer-facing paths—appointments, rapid
 quotes, technician questions, specials, warranty information, referrals,
@@ -28,13 +28,12 @@ reframing them in two distinct, modern automotive presentations.
   surfaces, electric blue, service amber, and restrained motion.
 - **Service-first visual system (`/shade`):** a white information masthead,
   red navigation, royal blue service blocks, yellow actions, workshop imagery,
-  and a family-shop trust sequence inspired by the reference site's structure.
+  and a family-shop trust sequence.
 
 ## Boundaries
 
 - This is a design demonstration, not Dean's live website.
 - No Ferrari logos, photographs, vehicle designs, copy, or trade dress are used.
-- No Shade Tree logo, assets, copy, or customer claims are used.
 - Forms are not recreated and no visitor data is collected. Customer actions
   open Dean's current public website.
 - The concept is intentionally **noindex** until an approved production handoff.

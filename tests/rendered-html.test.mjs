@@ -57,7 +57,7 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(shadeResponse.headers.get("content-type") ?? "", /^text\/html\b/i);
   const shadeHtml = await shadeResponse.text();
   const shadeText = shadeHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
-  assert.match(shadeHtml, /<title>Dean(?:'|&#x27;)s Quality Transmissions \| Shade Tree Direction<\/title>/i);
+  assert.match(shadeHtml, /<title>Dean(?:'|&#x27;)s Quality Transmissions \| Service Direction<\/title>/i);
   assert.match(shadeHtml, /Independent concept direction/i);
   assert.match(shadeText, /Serving Spanish Fork drivers since 1988/i);
   assert.match(shadeHtml, /Transmission diagnosis, repair and rebuilding/i);
@@ -92,6 +92,7 @@ test("server-renders both completed transmission concepts", async () => {
   assert.match(shadeHtml, /href="\/shade\/forms\/question"/i);
   assert.match(shadeHtml, /href="\/shade\/forms\/referral"/i);
   assert.doesNotMatch(shadeHtml, /deans-quality-transmissions\.com\/(?:appointment\.aspx|rapidquote\.aspx|services\/ask\.aspx|referfriend\.aspx|survey\.aspx)/i);
+  assert.doesNotMatch(shadeHtml, /shade tree|shadetreeautomotive\.net/i);
   assert.doesNotMatch(shadeHtml, /codex-preview|SkeletonPreview|react-loading-skeleton/i);
 });
 

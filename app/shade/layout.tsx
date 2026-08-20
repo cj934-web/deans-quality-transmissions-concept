@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./shade.css";
 
-const title = "Dean's Quality Transmissions | Shade Tree Direction";
+const title = "Dean's Quality Transmissions | Service Direction";
 const description =
   "An independent, friendly-service design direction for Dean's Quality Transmissions in Spanish Fork, Utah.";
 

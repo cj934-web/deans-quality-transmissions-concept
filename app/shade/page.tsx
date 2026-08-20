@@ -68,8 +68,7 @@ export default function ShadeDirection() {
     <main className="shade-concept" id="shade-top">
       <a className="shade-skip" href="#shade-content">Skip to content</a>
       <div className="shade-disclosure">
-        <p><strong>Independent concept direction</strong> · Shade Tree-inspired structure; request forms stay in this concept.</p>
-        <a href="https://www.shadetreeautomotive.net/">View layout reference <span aria-hidden="true">↗</span></a>
+        <p><strong>Independent concept direction</strong> · Request forms stay in this concept.</p>
       </div>
 
       <header className="shade-masthead">
@@ -249,8 +248,8 @@ export default function ShadeDirection() {
       <footer className="shade-footer">
         <div className="shade-footer-top"><a className="shade-mark shade-footer-mark" href="#shade-top"><strong>Dean&apos;s</strong><span>Quality Transmissions</span></a><p>Independent concept direction. Business information comes from Dean&apos;s current public website; forms open the visitor&apos;s email app and are not stored here.</p></div>
         <div className="shade-source-links" aria-label="Dean's information and request pages">{originalPages.map(([label, path]) => <a href={localFormPaths[path] ?? `${source}${path}`} key={label}>{label}<span aria-hidden="true">{localFormPaths[path] ? "→" : "↗"}</span></a>)}</div>
-        <div className="shade-footer-bottom"><p>Layout study references Shade Tree Automotive; no Shade Tree assets, logo or copy are used.</p><div>
-          <a href="/">Ferrari direction</a><a href="https://www.shadetreeautomotive.net/">Shade Tree reference</a><a href={source}>Dean&apos;s current site</a>
+        <div className="shade-footer-bottom"><p>Independent service-focused direction for Dean&apos;s Quality Transmissions.</p><div>
+          <a href="/">Original direction</a><a href={source}>Dean&apos;s current site</a>
         </div></div>
       </footer>
     </main>
